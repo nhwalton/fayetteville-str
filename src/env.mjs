@@ -8,6 +8,9 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    NEXT_PUBLIC_DATA_FETCH: z.string(),
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: z.string(),
+    NEXT_PUBLIC_GOOGLE_GEOCODE_API_KEY: z.string(),
   },
 
   /**
@@ -25,6 +28,9 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    NEXT_PUBLIC_DATA_FETCH: process.env.NEXT_PUBLIC_DATA_FETCH,
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    NEXT_PUBLIC_GOOGLE_GEOCODE_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_GEOCODE_API_KEY,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

@@ -1,0 +1,3668 @@
+[
+    {
+        "id": 1,
+        "address": "118 N EAST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.06425309999999,
+        "lng": -94.15935789999999
+    },
+    {
+        "id": 2,
+        "address": "484 S WYMAN RD FAYETTEVILLE AR 72701",
+        "lat": 36.0956022,
+        "lng": -94.0148366
+    },
+    {
+        "id": 3,
+        "address": "2651 N WALLIS ALY FAYETTEVILLE AR 72703",
+        "lat": 36.099532,
+        "lng": -94.130222
+    },
+    {
+        "id": 4,
+        "address": "3447 W MARSH ST FAYETTEVILLE AR 72704",
+        "lat": 36.1043802,
+        "lng": -94.2085702
+    },
+    {
+        "id": 5,
+        "address": "2666 N GULLEY GROVE CIR FAYETTEVILLE AR 72703",
+        "lat": 36.099373,
+        "lng": -94.13100999999999
+    },
+    {
+        "id": 6,
+        "address": "571 N KEATS DR FAYETTEVILLE AR 72704",
+        "lat": 36.0727496,
+        "lng": -94.2208613
+    },
+    {
+        "id": 7,
+        "address": "1488 W MOUNT COMFORT RD FAYETTEVILLE AR 72703",
+        "lat": 36.0821605,
+        "lng": -94.1808758
+    },
+    {
+        "id": 8,
+        "address": "1416 S DUNCAN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0492433,
+        "lng": -94.1714712
+    },
+    {
+        "id": 9,
+        "address": "146 N PALMER AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0650503,
+        "lng": -94.1827563
+    },
+    {
+        "id": 10,
+        "address": "3712 N HWY 112 FAYETTEVILLE AR 72704",
+        "lat": 36.1178775,
+        "lng": -94.1812759
+    },
+    {
+        "id": 11,
+        "address": "281 W ASH ST Unit: 4 FAYETTEVILLE AR 72703",
+        "lat": 36.086221,
+        "lng": -94.163393
+    },
+    {
+        "id": 12,
+        "address": "1780 N WALNUT AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0860746,
+        "lng": -94.15235620000001
+    },
+    {
+        "id": 13,
+        "address": "600 W MEADOW ST Unit: 210 FAYETTEVILLE AR 72701",
+        "lat": 36.0640115,
+        "lng": -94.16676849999999
+    },
+    {
+        "id": 14,
+        "address": "1318 S WEST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0496184,
+        "lng": -94.1655141
+    },
+    {
+        "id": 15,
+        "address": "115 E 9TH ST Fayetteville AR 72701",
+        "lat": 36.0537078,
+        "lng": -94.157793
+    },
+    {
+        "id": 16,
+        "address": "2646 N MIRANDA AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0999819,
+        "lng": -94.1547166
+    },
+    {
+        "id": 17,
+        "address": "921 E LIGHTON TRL FAYETTEVILLE AR 72701",
+        "lat": 36.0622612,
+        "lng": -94.1457585
+    },
+    {
+        "id": 18,
+        "address": "1254 S IVORY BILL LN FAYETTEVILLE AR 72701",
+        "lat": 36.0501464,
+        "lng": -94.14717790000002
+    },
+    {
+        "id": 19,
+        "address": "2300 N BRIARWOOD LN FAYETTEVILLE AR 72703",
+        "lat": 36.0934249,
+        "lng": -94.14389919999999
+    },
+    {
+        "id": 20,
+        "address": "462 E MIMOSA LN FAYETTEVILLE AR 72703",
+        "lat": 36.103616,
+        "lng": -94.1513564
+    },
+    {
+        "id": 21,
+        "address": "1015 S REGENCY DR FAYETTEVILLE AR 72701",
+        "lat": 36.051173,
+        "lng": -94.0993182
+    },
+    {
+        "id": 22,
+        "address": "372 S HILL AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0586297,
+        "lng": -94.16932779999999
+    },
+    {
+        "id": 23,
+        "address": "1370 S VAN BUREN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0492606,
+        "lng": -94.16998819999999
+    },
+    {
+        "id": 24,
+        "address": "348 N FLETCHER AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0667398,
+        "lng": -94.14988749999999
+    },
+    {
+        "id": 25,
+        "address": "332 N FLETCHER AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0653676,
+        "lng": -94.1500447
+    },
+    {
+        "id": 26,
+        "address": "2525 N GOOSEBERRY LN FAYETTEVILLE AR 72704",
+        "lat": 36.0983711,
+        "lng": -94.2027275
+    },
+    {
+        "id": 27,
+        "address": "833 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054826,
+        "lng": -94.20317899999999
+    },
+    {
+        "id": 28,
+        "address": "116 N SCHOOL AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0643866,
+        "lng": -94.16403629999999
+    },
+    {
+        "id": 29,
+        "address": "4479 W PUTTING GREEN DR FAYETTEVILLE AR 72704",
+        "lat": 36.0728046,
+        "lng": -94.2247254
+    },
+    {
+        "id": 30,
+        "address": "578 N SEQUOYAH DR FAYETTEVILLE AR 72701",
+        "lat": 36.0713186,
+        "lng": -94.1437993
+    },
+    {
+        "id": 31,
+        "address": "2554 E NEELY PL FAYETTEVILLE AR 72701",
+        "lat": 36.0562481,
+        "lng": -94.1255927
+    },
+    {
+        "id": 32,
+        "address": "833 N RUSH DR FAYETTEVILLE AR 72701",
+        "lat": 36.0746019,
+        "lng": -94.15063669999999
+    },
+    {
+        "id": 33,
+        "address": "2024 W WEDINGTON DR FAYETTEVILLE AR 72701",
+        "lat": 36.0783754,
+        "lng": -94.1885183
+    },
+    {
+        "id": 34,
+        "address": "3381 W FAIRFAX ST FAYETTEVILLE AR 72704",
+        "lat": 36.0872896,
+        "lng": -94.20760949999999
+    },
+    {
+        "id": 35,
+        "address": "309 E LAFAYETTE ST Unit: 203 FAYETTEVILLE AR 72701",
+        "lat": 36.068274,
+        "lng": -94.15430529999999
+    },
+    {
+        "id": 36,
+        "address": "616 N WALNUT AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0722829,
+        "lng": -94.15271609999999
+    },
+    {
+        "id": 37,
+        "address": "435 N OLIVER AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0697317,
+        "lng": -94.18165599999999
+    },
+    {
+        "id": 38,
+        "address": "1829 N WOOLSEY AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0867639,
+        "lng": -94.16194879999999
+    },
+    {
+        "id": 39,
+        "address": "819 N WOODLAWN DR FAYETTEVILLE AR 72701",
+        "lat": 36.073763,
+        "lng": -94.1479176
+    },
+    {
+        "id": 40,
+        "address": "5344 E MILO WAY FAYETTEVILLE AR 72701",
+        "lat": 36.0399931,
+        "lng": -94.0844396
+    },
+    {
+        "id": 41,
+        "address": "2779 W COTTONWILLOW WAY FAYETTEVILLE AR 72704",
+        "lat": 36.0601388,
+        "lng": -94.199248
+    },
+    {
+        "id": 42,
+        "address": "871 E SPARROW CIR FAYETTEVILLE AR 72701",
+        "lat": 36.0462442,
+        "lng": -94.14717790000002
+    },
+    {
+        "id": 43,
+        "address": "609 W DICKSON ST Unit: 904 Fayetteville AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 44,
+        "address": "208 N EAST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0649295,
+        "lng": -94.1593546
+    },
+    {
+        "id": 45,
+        "address": "617 W MOAN PL Fayetteville AR 72703",
+        "lat": 36.0834274,
+        "lng": -94.1665505
+    },
+    {
+        "id": 46,
+        "address": "1431 W SLIGO ST Unit: 6 FAYETTEVILLE AR 72701",
+        "lat": 36.0437203,
+        "lng": -94.1816441
+    },
+    {
+        "id": 47,
+        "address": "3200 W SHALE ST FAYETTEVILLE AR 72704",
+        "lat": 36.0817974,
+        "lng": -94.20949089999999
+    },
+    {
+        "id": 48,
+        "address": "1831 W MITCHELL ST FAYETTEVILLE AR 72701",
+        "lat": 36.0579636,
+        "lng": -94.18696059999999
+    },
+    {
+        "id": 49,
+        "address": "204 N SHIPLEY ALY Unit: 103 Fayetteville AR 72701",
+        "lat": 36.06491860000001,
+        "lng": -94.16354919999999
+    },
+    {
+        "id": 50,
+        "address": "1975 W DEANE ST FAYETTEVILLE AR 72703",
+        "lat": 36.085992,
+        "lng": -94.18771799999999
+    },
+    {
+        "id": 51,
+        "address": "344 N FLETCHER AVE FAYETTEVILLE AR 72701",
+        "lat": 36.066638,
+        "lng": -94.14988199999999
+    },
+    {
+        "id": 52,
+        "address": "2641 N VILLA BLVD FAYETTEVILLE AR 72703",
+        "lat": 36.0994492,
+        "lng": -94.15303899999999
+    },
+    {
+        "id": 53,
+        "address": "1123 S TOTTENHAM CT Fayetteville AR 72704",
+        "lat": 36.0527942,
+        "lng": -94.20544029999999
+    },
+    {
+        "id": 54,
+        "address": "339 N WEST AVE  Unit: 208 FAYETTEVILLE AR 72701",
+        "lat": 36.0676831,
+        "lng": -94.165566
+    },
+    {
+        "id": 55,
+        "address": "3869 W SOMERVILLE LN FAYETTEVILLE AR 72704",
+        "lat": 36.065273,
+        "lng": -94.21549399999999
+    },
+    {
+        "id": 56,
+        "address": "205 N CHURCH AVE Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.0649167,
+        "lng": -94.1620665
+    },
+    {
+        "id": 57,
+        "address": "614 W LAFAYETTE ST FAYETTEVILLE AR 72701",
+        "lat": 36.0685577,
+        "lng": -94.167234
+    },
+    {
+        "id": 58,
+        "address": "242 N SOLITUDE BND  Fayetteville AR 72704",
+        "lat": 36.0673378,
+        "lng": -94.21376169999999
+    },
+    {
+        "id": 59,
+        "address": "1311 W MOUNT COMFORT RD  Unit: 1 Fayetteville AR 72703",
+        "lat": 36.0813348,
+        "lng": -94.1787382
+    },
+    {
+        "id": 60,
+        "address": "2724 N ARROYO AVE  Fayetteville AR 72703",
+        "lat": 36.1013193,
+        "lng": -94.1549536
+    },
+    {
+        "id": 61,
+        "address": "1835 W MITCHELL ST FAYETTEVILLE AR 72701",
+        "lat": 36.0579636,
+        "lng": -94.18696059999999
+    },
+    {
+        "id": 62,
+        "address": "762 S CURTIS AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0545662,
+        "lng": -94.1410071
+    },
+    {
+        "id": 63,
+        "address": "215 E CENTER ST Unit: 2 FAYETTEVILLE AR 72701",
+        "lat": 36.0624448,
+        "lng": -94.15621680000001
+    },
+    {
+        "id": 64,
+        "address": "3022 W OLD FARMINGTON RD FAYETTEVILLE AR 72704",
+        "lat": 36.0539825,
+        "lng": -94.20340639999999
+    },
+    {
+        "id": 65,
+        "address": "243 S GREGG AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0604289,
+        "lng": -94.1674005
+    },
+    {
+        "id": 66,
+        "address": "376 S HILL AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0586611,
+        "lng": -94.1693008
+    },
+    {
+        "id": 67,
+        "address": "93 S WEST AVE Fayetteville AR 72701",
+        "lat": 36.0618506,
+        "lng": -94.1661701
+    },
+    {
+        "id": 68,
+        "address": "2722 N ARROYO AVE  Fayetteville AR 72703",
+        "lat": 36.1012798,
+        "lng": -94.1549575
+    },
+    {
+        "id": 69,
+        "address": "1017 E STARLING ST FAYETTEVILLE AR 72701",
+        "lat": 36.046071,
+        "lng": -94.145389
+    },
+    {
+        "id": 70,
+        "address": "1275 N RUPPLE RD FAYETTEVILLE AR 72704",
+        "lat": 36.0808154,
+        "lng": -94.2177373
+    },
+    {
+        "id": 71,
+        "address": "1897 W STONE ST Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.059357,
+        "lng": -94.186954
+    },
+    {
+        "id": 72,
+        "address": "817 N SUNSET DR  Unit: A FAYETTEVILLE AR 72701",
+        "lat": 36.0754102,
+        "lng": -94.18104079999999
+    },
+    {
+        "id": 73,
+        "address": "3191 W OAKFIELD ST FAYETTEVILLE AR 72704",
+        "lat": 36.0850123,
+        "lng": -94.20484739999999
+    },
+    {
+        "id": 74,
+        "address": "245 S GREGG AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0603813,
+        "lng": -94.16740539999999
+    },
+    {
+        "id": 75,
+        "address": "724 E LAFAYETTE ST FAYETTEVILLE AR 72701",
+        "lat": 36.0685816,
+        "lng": -94.1481575
+    },
+    {
+        "id": 76,
+        "address": "442 S DUNCAN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0582785,
+        "lng": -94.17127430000001
+    },
+    {
+        "id": 77,
+        "address": "521 S CHURCH AVE  Fayetteville AR 72701",
+        "lat": 36.0568162,
+        "lng": -94.1621943
+    },
+    {
+        "id": 78,
+        "address": "2827 W LAKEWOOD DR FAYETTEVILLE AR 72704",
+        "lat": 36.0611416,
+        "lng": -94.2001925
+    },
+    {
+        "id": 79,
+        "address": "3425 E WYMAN RD Fayetteville AR 72701",
+        "lat": 36.0584719,
+        "lng": -94.11286229999999
+    },
+    {
+        "id": 80,
+        "address": "509 S CHURCH AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0571065,
+        "lng": -94.1622275
+    },
+    {
+        "id": 81,
+        "address": "924 N EVA AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0766438,
+        "lng": -94.1846769
+    },
+    {
+        "id": 82,
+        "address": "594 W MOAN PL  Fayetteville AR 72703",
+        "lat": 36.0844202,
+        "lng": -94.16599099999999
+    },
+    {
+        "id": 83,
+        "address": "3541 N SANDPIPER DR  Fayetteville AR 72704",
+        "lat": 36.1161558,
+        "lng": -94.1600745
+    },
+    {
+        "id": 84,
+        "address": "705 S MOUNT MILLSAP LN Fayetteville AR 72704",
+        "lat": 36.0563892,
+        "lng": -94.2025828
+    },
+    {
+        "id": 85,
+        "address": "16 E 29TH CIR FAYETTEVILLE AR 72701",
+        "lat": 36.0323673,
+        "lng": -94.1602345
+    },
+    {
+        "id": 86,
+        "address": "925 W EAGLE ST  Fayetteville AR 72701",
+        "lat": 36.0747526,
+        "lng": -94.1728856
+    },
+    {
+        "id": 87,
+        "address": "732 E LAFAYETTE ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0686091,
+        "lng": -94.14797759999999
+    },
+    {
+        "id": 88,
+        "address": "2116 W LOREN CIR FAYETTEVILLE AR 72701",
+        "lat": 36.0714828,
+        "lng": -94.1916397
+    },
+    {
+        "id": 89,
+        "address": "1426 S DUNCAN AVE Fayetteville AR 72701",
+        "lat": 36.0491032,
+        "lng": -94.17150420000002
+    },
+    {
+        "id": 90,
+        "address": "527 N STORER AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0713865,
+        "lng": -94.17247429999999
+    },
+    {
+        "id": 91,
+        "address": "526 N TIMELESS DR  FAYETTEVILLE AR 72704",
+        "lat": 36.0722226,
+        "lng": -94.2268077
+    },
+    {
+        "id": 92,
+        "address": "206 N LOCUST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0650224,
+        "lng": -94.1627942
+    },
+    {
+        "id": 93,
+        "address": "929 W EDEN CIR  Fayetteville AR 72701",
+        "lat": 36.0396173,
+        "lng": -94.17503459999999
+    },
+    {
+        "id": 94,
+        "address": "621 S SKYLINE DR Fayetteville AR 72701",
+        "lat": 36.0629699,
+        "lng": -94.14503739999999
+    },
+    {
+        "id": 95,
+        "address": "1259 N OAKLAND AVE  Unit: A Fayetteville AR 72703",
+        "lat": 36.0797482,
+        "lng": -94.1732973
+    },
+    {
+        "id": 96,
+        "address": "2487 N BROPHY CIR  Fayetteville AR 72703",
+        "lat": 36.0967092,
+        "lng": -94.1502251
+    },
+    {
+        "id": 97,
+        "address": "116 N SCHOOL AVE Unit: B Fayetteville AR 72701",
+        "lat": 36.0643866,
+        "lng": -94.16403629999999
+    },
+    {
+        "id": 98,
+        "address": "521 W MEADOW ST FAYETTEVILLE AR 72701",
+        "lat": 36.0636147,
+        "lng": -94.1659348
+    },
+    {
+        "id": 99,
+        "address": "2485 N BROPHY CIR  Fayetteville AR 72703",
+        "lat": 36.0966353,
+        "lng": -94.15019149999999
+    },
+    {
+        "id": 100,
+        "address": "1310 N PLUM TREE DR  Fayetteville AR 72704",
+        "lat": 36.0812359,
+        "lng": -94.2206611
+    },
+    {
+        "id": 101,
+        "address": "400 N OLIVER AVE  Unit: 1 Fayetteville AR 72701",
+        "lat": 36.06829460000001,
+        "lng": -94.1809158
+    },
+    {
+        "id": 102,
+        "address": "2578 N WARD DR FAYETTEVILLE AR 72704",
+        "lat": 36.0988641,
+        "lng": -94.1905592
+    },
+    {
+        "id": 103,
+        "address": "596 W MOAN PL  Fayetteville AR 72703",
+        "lat": 36.08443159999999,
+        "lng": -94.16607259999999
+    },
+    {
+        "id": 104,
+        "address": "204 W MILLER ST FAYETTEVILLE AR 72703",
+        "lat": 36.0876037,
+        "lng": -94.1620743
+    },
+    {
+        "id": 105,
+        "address": "820 W MONTGOMERY ST FAYETTEVILLE AR 72701",
+        "lat": 36.0272852,
+        "lng": -94.176459
+    },
+    {
+        "id": 106,
+        "address": "2658 N MCALLISTER ALY FAYETTEVILLE AR 72703",
+        "lat": 36.09945099999999,
+        "lng": -94.130758
+    },
+    {
+        "id": 107,
+        "address": "1617 N MAXWELL DR FAYETTEVILLE AR 72703",
+        "lat": 36.0840419,
+        "lng": -94.1791954
+    },
+    {
+        "id": 108,
+        "address": "1669 W CEDAR ST FAYETTEVILLE AR 72703",
+        "lat": 36.0803275,
+        "lng": -94.1835965
+    },
+    {
+        "id": 109,
+        "address": "426 W LAWSON ST FAYETTEVILLE AR 72703",
+        "lat": 36.0811816,
+        "lng": -94.1651141
+    },
+    {
+        "id": 110,
+        "address": "823 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054961,
+        "lng": -94.203552
+    },
+    {
+        "id": 111,
+        "address": "2352 W HOUSTON ST  FAYETTEVILLE AR 72703",
+        "lat": 36.0845487,
+        "lng": -94.1919983
+    },
+    {
+        "id": 112,
+        "address": "465 S LOCUST AVE Unit: 6 FAYETTEVILLE AR 72701",
+        "lat": 36.0577231,
+        "lng": -94.1634512
+    },
+    {
+        "id": 113,
+        "address": "229 S GREGG AVE FAYETTEVILLE AR 72701",
+        "lat": 36.060399,
+        "lng": -94.1671932
+    },
+    {
+        "id": 114,
+        "address": "1651 W CLEVELAND ST FAYETTEVILLE AR 72701",
+        "lat": 36.0738229,
+        "lng": -94.18349649999999
+    },
+    {
+        "id": 115,
+        "address": "912 S WOOD AVE FAYETTEVILLE AR 72701",
+        "lat": 36.053477,
+        "lng": -94.1535669
+    },
+    {
+        "id": 116,
+        "address": "465 S LOCUST AVE Unit: 5 FAYETTEVILLE AR 72701",
+        "lat": 36.0575729,
+        "lng": -94.163474
+    },
+    {
+        "id": 117,
+        "address": "881 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.0543108,
+        "lng": -94.2034164
+    },
+    {
+        "id": 118,
+        "address": "507 S PHILLIP DR  FAYETTEVILLE AR 72701",
+        "lat": 36.05797,
+        "lng": -94.1887984
+    },
+    {
+        "id": 119,
+        "address": "1232 S DINSMORE TRL FAYETTEVILLE AR 72704",
+        "lat": 36.0519582,
+        "lng": -94.2127737
+    },
+    {
+        "id": 120,
+        "address": "1021 E LIGHTON TRL FAYETTEVILLE AR 72701",
+        "lat": 36.0621417,
+        "lng": -94.1451249
+    },
+    {
+        "id": 121,
+        "address": "2831 W WILDWOOD DR  FAYETTEVILLE AR 72704",
+        "lat": 36.0888537,
+        "lng": -94.1994035
+    },
+    {
+        "id": 122,
+        "address": "157 W MARTIN LUTHER KING JR BLVD FAYETTEVILLE AR 72701",
+        "lat": 36.0562581,
+        "lng": -94.16154540000001
+    },
+    {
+        "id": 123,
+        "address": "514 S BUCHANAN AVE Fayetteville AR 72701",
+        "lat": 36.0576924,
+        "lng": -94.1723943
+    },
+    {
+        "id": 124,
+        "address": "328 E MARTIN LUTHER KING JR BLVD  FAYETTEVILLE AR 72701",
+        "lat": 36.0563443,
+        "lng": -94.1549955
+    },
+    {
+        "id": 125,
+        "address": "932 N GARLAND AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0766646,
+        "lng": -94.1749346
+    },
+    {
+        "id": 126,
+        "address": "3028 N MALINDA DR  FAYETTEVILLE AR 72703",
+        "lat": 36.106675,
+        "lng": -94.1499169
+    },
+    {
+        "id": 127,
+        "address": "4171 W BRADSTREET LN FAYETTEVILLE AR 72704",
+        "lat": 36.074044,
+        "lng": -94.22022059999999
+    },
+    {
+        "id": 128,
+        "address": "1378 S WASHINGTON AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0493631,
+        "lng": -94.15691269999999
+    },
+    {
+        "id": 129,
+        "address": "1417 N ADDINGTON AVE Unit: 2 FAYETTEVILLE AR 72703",
+        "lat": 36.0818276,
+        "lng": -94.178446
+    },
+    {
+        "id": 130,
+        "address": "230 S COLLEGE AVE FAYETTEVILLE AR 72701",
+        "lat": 36.05963819999999,
+        "lng": -94.157761
+    },
+    {
+        "id": 131,
+        "address": "623 E MCCLINTON ST FAYETTEVILLE AR 72701",
+        "lat": 36.0519655,
+        "lng": -94.15130649999999
+    },
+    {
+        "id": 132,
+        "address": "275 E NOBLE LN  FAYETTEVILLE AR 72703",
+        "lat": 36.0799694,
+        "lng": -94.1548538
+    },
+    {
+        "id": 133,
+        "address": "3216 W SHALE ST  FAYETTEVILLE AR 72704",
+        "lat": 36.08179030000001,
+        "lng": -94.2096911
+    },
+    {
+        "id": 134,
+        "address": "309 S EASTERN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0594095,
+        "lng": -94.1839967
+    },
+    {
+        "id": 135,
+        "address": "548 N SALEM RD FAYETTEVILLE AR 72704",
+        "lat": 36.0717604,
+        "lng": -94.2091707
+    },
+    {
+        "id": 136,
+        "address": "1052 W CATO SPRINGS RD Fayetteville AR 72701",
+        "lat": 36.0415873,
+        "lng": -94.1757147
+    },
+    {
+        "id": 137,
+        "address": "353 N ROLLSTON AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0682751,
+        "lng": -94.1631542
+    },
+    {
+        "id": 138,
+        "address": "85 N SOLITUDE BND FAYETTEVILLE AR 72704",
+        "lat": 36.0650664,
+        "lng": -94.21385459999999
+    },
+    {
+        "id": 139,
+        "address": "341 N ROLLSTON AVE  Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.0679379,
+        "lng": -94.1631147
+    },
+    {
+        "id": 140,
+        "address": "341 N ROLLSTON AVE  Unit: 2 FAYETTEVILLE AR 72701",
+        "lat": 36.0679404,
+        "lng": -94.1631767
+    },
+    {
+        "id": 141,
+        "address": "835 E RODGERS DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0613361,
+        "lng": -94.1467581
+    },
+    {
+        "id": 142,
+        "address": "215 E CENTER ST FAYETTEVILLE AR 72701",
+        "lat": 36.0624725,
+        "lng": -94.1562152
+    },
+    {
+        "id": 143,
+        "address": "424 W PATRICIA LN  FAYETTEVILLE AR 72703",
+        "lat": 36.0787458,
+        "lng": -94.1655985
+    },
+    {
+        "id": 144,
+        "address": "1637 N LINDA JO PL FAYETTEVILLE AR 72703",
+        "lat": 36.0841504,
+        "lng": -94.191752
+    },
+    {
+        "id": 145,
+        "address": "16 E SPRING ST FAYETTEVILLE AR 72701",
+        "lat": 36.0648134,
+        "lng": -94.15909789999999
+    },
+    {
+        "id": 146,
+        "address": "1897 W STONE ST  Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.059357,
+        "lng": -94.186954
+    },
+    {
+        "id": 147,
+        "address": "2088 E CUSTER LN FAYETTEVILLE AR 72701",
+        "lat": 36.0426629,
+        "lng": -94.1863351
+    },
+    {
+        "id": 148,
+        "address": "2352 W HOUSTON ST FAYETTEVILLE AR 72703",
+        "lat": 36.0845487,
+        "lng": -94.1919983
+    },
+    {
+        "id": 149,
+        "address": "2798 W COTTONWILLOW WAY FAYETTEVILLE AR 72704",
+        "lat": 36.0603941,
+        "lng": -94.19961219999999
+    },
+    {
+        "id": 150,
+        "address": "109 W SKYLINE DR FAYETTEVILLE AR 72701",
+        "lat": 36.0658021,
+        "lng": -94.14821750000002
+    },
+    {
+        "id": 151,
+        "address": "3081 N JOHN WAYNE DR  FAYETTEVILLE AR 72703",
+        "lat": 36.1075173,
+        "lng": -94.15987450000002
+    },
+    {
+        "id": 152,
+        "address": "569 N TENNYSON LN  FAYETTEVILLE AR 72704",
+        "lat": 36.072754,
+        "lng": -94.2198303
+    },
+    {
+        "id": 153,
+        "address": "1616 S PRICE AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0468851,
+        "lng": -94.17339439999999
+    },
+    {
+        "id": 154,
+        "address": "418 E REBECCA ST FAYETTEVILLE AR 72701",
+        "lat": 36.0729014,
+        "lng": -94.1519963
+    },
+    {
+        "id": 155,
+        "address": "517 E TOWNSHIP ST FAYETTEVILLE AR 72703",
+        "lat": 36.0948038,
+        "lng": -94.1506167
+    },
+    {
+        "id": 156,
+        "address": "117 E DAVIDSON ST FAYETTEVILLE AR 72701",
+        "lat": 36.0711092,
+        "lng": -94.1566151
+    },
+    {
+        "id": 157,
+        "address": "4788 W SOAPSTONE DR FAYETTEVILLE AR 72704",
+        "lat": 36.0724935,
+        "lng": -94.22935059999999
+    },
+    {
+        "id": 158,
+        "address": "4090 W STONEY BEND DR FAYETTEVILLE AR 72704",
+        "lat": 36.0947264,
+        "lng": -94.218559
+    },
+    {
+        "id": 159,
+        "address": "4219 W ANTHEM DR Fayetteville AR 72704",
+        "lat": 36.0661238,
+        "lng": -94.2211816
+    },
+    {
+        "id": 160,
+        "address": "2303 E AMHERST ALY Fayetteville AR 72703",
+        "lat": 36.129873,
+        "lng": -94.12861500000001
+    },
+    {
+        "id": 161,
+        "address": "2939 N RAVEN LN Fayetteville AR 72704",
+        "lat": 36.1058669,
+        "lng": -94.2030262
+    },
+    {
+        "id": 162,
+        "address": "1852 N PINE CONE DR FAYETTEVILLE AR 72704",
+        "lat": 36.0873445,
+        "lng": -94.2024057
+    },
+    {
+        "id": 163,
+        "address": "5 S WEST AVE Unit: B FAYETTEVILLE AR 72701",
+        "lat": 36.0625696,
+        "lng": -94.165792
+    },
+    {
+        "id": 164,
+        "address": "205 E HAROLD ST FAYETTEVILLE AR 72703",
+        "lat": 36.1098984,
+        "lng": -94.1424799
+    },
+    {
+        "id": 165,
+        "address": "1258 N IRON HORSE DR FAYETTEVILLE AR 72703",
+        "lat": 36.0787929,
+        "lng": -94.1676864
+    },
+    {
+        "id": 166,
+        "address": "1222 N IRON HORSE DR FAYETTEVILLE AR 72703",
+        "lat": 36.0784714,
+        "lng": -94.1677485
+    },
+    {
+        "id": 167,
+        "address": "2133 W BERRY ST FAYETTEVILLE AR 72701",
+        "lat": 36.0754491,
+        "lng": -94.18975879999999
+    },
+    {
+        "id": 168,
+        "address": "310 E MARTIN LUTHER KING JR BLVD FAYETTEVILLE AR 72701",
+        "lat": 36.0563588,
+        "lng": -94.1553161
+    },
+    {
+        "id": 169,
+        "address": "891 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.05438900000001,
+        "lng": -94.203276
+    },
+    {
+        "id": 170,
+        "address": "229 N BLOCK AVE FAYETTEVILLE AR 72701",
+        "lat": 36.065814,
+        "lng": -94.1607544
+    },
+    {
+        "id": 171,
+        "address": "1434 N OAKLAND AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0816769,
+        "lng": -94.1728343
+    },
+    {
+        "id": 172,
+        "address": "3175 W IKA LN FAYETTEVILLE AR 72704",
+        "lat": 36.1098781,
+        "lng": -94.2041661
+    },
+    {
+        "id": 173,
+        "address": "413 S WEST AVE Fayetteville AR 72701",
+        "lat": 36.0583427,
+        "lng": -94.165874
+    },
+    {
+        "id": 174,
+        "address": "120 N WASHINGTON AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0727652,
+        "lng": -94.1559605
+    },
+    {
+        "id": 175,
+        "address": "1234 S GENTLE VALLEY DR FAYETTEVILLE AR 72704",
+        "lat": 36.0521006,
+        "lng": -94.2298512
+    },
+    {
+        "id": 176,
+        "address": "839 N GREGG AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0747431,
+        "lng": -94.16677399999999
+    },
+    {
+        "id": 177,
+        "address": "325 S HAPPY HOLLOW RD FAYETTEVILLE AR 72701",
+        "lat": 36.0582483,
+        "lng": -94.13606329999999
+    },
+    {
+        "id": 178,
+        "address": "1431 W SLIGO ST Unit: 8 FAYETTEVILLE AR 72701",
+        "lat": 36.0437203,
+        "lng": -94.1816441
+    },
+    {
+        "id": 179,
+        "address": "1124 S TOTTENHAM CT FAYETTEVILLE AR 72704",
+        "lat": 36.052821,
+        "lng": -94.2050876
+    },
+    {
+        "id": 180,
+        "address": "3194 W OAKFIELD ST FAYETTEVILLE AR 72704",
+        "lat": 36.0854077,
+        "lng": -94.20474519999999
+    },
+    {
+        "id": 181,
+        "address": "413 S WEST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0583427,
+        "lng": -94.165874
+    },
+    {
+        "id": 182,
+        "address": "1004 E STARLING ST FAYETTEVILLE AR 72701",
+        "lat": 36.046482,
+        "lng": -94.1455469
+    },
+    {
+        "id": 183,
+        "address": "855 N FRITZ DR FAYETTEVILLE AR 72701",
+        "lat": 36.0745301,
+        "lng": -94.15271609999999
+    },
+    {
+        "id": 184,
+        "address": "171 N SOLITUDE BND FAYETTEVILLE AR 72704",
+        "lat": 36.0660855,
+        "lng": -94.21381459999999
+    },
+    {
+        "id": 185,
+        "address": "1631 W NETTLESHIP ST FAYETTEVILLE AR 72701",
+        "lat": 36.0612542,
+        "lng": -94.1842137
+    },
+    {
+        "id": 186,
+        "address": "521 N SHADY AVE Unit: 4 FAYETTEVILLE AR 72701",
+        "lat": 36.0707791,
+        "lng": -94.1634632
+    },
+    {
+        "id": 187,
+        "address": "1578 N GARLAND AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0835548,
+        "lng": -94.1749146
+    },
+    {
+        "id": 188,
+        "address": "2415 S SHILOH DR FAYETTEVILLE AR 72701",
+        "lat": 36.0368585,
+        "lng": -94.1933605
+    },
+    {
+        "id": 189,
+        "address": "2789 W AUBURN DR FAYETTEVILLE AR 72704",
+        "lat": 36.0605009,
+        "lng": -94.1994773
+    },
+    {
+        "id": 190,
+        "address": "215 W LAFAYETTE ST FAYETTEVILLE AR 72701",
+        "lat": 36.0684134,
+        "lng": -94.16283419999999
+    },
+    {
+        "id": 191,
+        "address": "531 N WASHINGTON AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0710974,
+        "lng": -94.156301
+    },
+    {
+        "id": 192,
+        "address": "825 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054884,
+        "lng": -94.203441
+    },
+    {
+        "id": 193,
+        "address": "827 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054882,
+        "lng": -94.203341
+    },
+    {
+        "id": 194,
+        "address": "1640 N LINDA JO PL FAYETTEVILLE AR 72703",
+        "lat": 36.0841493,
+        "lng": -94.19115289999999
+    },
+    {
+        "id": 195,
+        "address": "1605 N APPLEBURY DR FAYETTEVILLE AR 72701",
+        "lat": 36.0769915,
+        "lng": -94.137738
+    },
+    {
+        "id": 196,
+        "address": "829 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054931,
+        "lng": -94.203217
+    },
+    {
+        "id": 197,
+        "address": "5 S WEST AVE Unit: B Fayetteville AR 72701",
+        "lat": 36.0625696,
+        "lng": -94.165792
+    },
+    {
+        "id": 198,
+        "address": "819 N WOODLAWN DR  FAYETTEVILLE AR 72701",
+        "lat": 36.073763,
+        "lng": -94.1479176
+    },
+    {
+        "id": 199,
+        "address": "95 S DUNCAN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0615793,
+        "lng": -94.1715942
+    },
+    {
+        "id": 200,
+        "address": "1485 E ETON ST  FAYETTEVILLE AR 72703",
+        "lat": 36.1069381,
+        "lng": -94.13860190000001
+    },
+    {
+        "id": 201,
+        "address": "510 E FRITZ CT  FAYETTEVILLE AR 72701",
+        "lat": 36.0752541,
+        "lng": -94.1513964
+    },
+    {
+        "id": 202,
+        "address": "2510 N JIMMIE AVE  FAYETTEVILLE AR 72703",
+        "lat": 36.0969821,
+        "lng": -94.1464582
+    },
+    {
+        "id": 203,
+        "address": "825 N MISSION BLVD  FAYETTEVILLE AR 72701",
+        "lat": 36.0749333,
+        "lng": -94.149637
+    },
+    {
+        "id": 204,
+        "address": "477 W SPRING ST FAYETTEVILLE AR 72701",
+        "lat": 36.064499,
+        "lng": -94.165166
+    },
+    {
+        "id": 205,
+        "address": "930 E SWIFT DR FAYETTEVILLE AR 72701",
+        "lat": 36.0506638,
+        "lng": -94.1463182
+    },
+    {
+        "id": 206,
+        "address": "212 E CLEBURN ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0753936,
+        "lng": -94.1554918
+    },
+    {
+        "id": 207,
+        "address": "2545 N KARYN AVE  Fayetteville AR 72703",
+        "lat": 36.0979359,
+        "lng": -94.1482975
+    },
+    {
+        "id": 208,
+        "address": "2476 E SAINT JAMES PL  FAYETTEVILLE AR 72701",
+        "lat": 36.0870746,
+        "lng": -94.1265645
+    },
+    {
+        "id": 209,
+        "address": "2610 E KANTZ DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0914079,
+        "lng": -94.12393809999999
+    },
+    {
+        "id": 210,
+        "address": "215 N CHURCH AVE Unit: 3 Fayetteville AR 72701",
+        "lat": 36.0653176,
+        "lng": -94.1622814
+    },
+    {
+        "id": 211,
+        "address": "3133 N OLD WIRE RD  Fayetteville AR 72703",
+        "lat": 36.1091672,
+        "lng": -94.1181371
+    },
+    {
+        "id": 212,
+        "address": "1112 S DUNN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0516858,
+        "lng": -94.1667435
+    },
+    {
+        "id": 213,
+        "address": "488 S BLOCK AVE Fayetteville AR 72701",
+        "lat": 36.0575342,
+        "lng": -94.1604675
+    },
+    {
+        "id": 214,
+        "address": "3216 W SHALE ST FAYETTEVILLE AR 72704",
+        "lat": 36.08179030000001,
+        "lng": -94.2096911
+    },
+    {
+        "id": 215,
+        "address": "617 E EDNA ST  FAYETTEVILLE AR 72703",
+        "lat": 36.085087,
+        "lng": -94.1490372
+    },
+    {
+        "id": 216,
+        "address": "435 E MARTIN LUTHER KING BLVD Fayetteville AR 72701",
+        "lat": 36.0559519,
+        "lng": -94.15407569999999
+    },
+    {
+        "id": 217,
+        "address": "324 E HUNTSVILLE RD  FAYETTEVILLE AR 72701",
+        "lat": 36.0584072,
+        "lng": -94.1538487
+    },
+    {
+        "id": 218,
+        "address": "567 E MIMOSA LN  Fayetteville AR 72703",
+        "lat": 36.1031502,
+        "lng": -94.15011679999999
+    },
+    {
+        "id": 219,
+        "address": "2789 W AUBURN DR  FAYETTEVILLE AR 72704",
+        "lat": 36.0605009,
+        "lng": -94.1994773
+    },
+    {
+        "id": 220,
+        "address": "437 E MARTIN LUTHER KING BLVD Fayetteville AR 72701",
+        "lat": 36.0559586,
+        "lng": -94.1539552
+    },
+    {
+        "id": 221,
+        "address": "2207 N EAST OAKS DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0913088,
+        "lng": -94.12604569999999
+    },
+    {
+        "id": 222,
+        "address": "216 W SPRING ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0649459,
+        "lng": -94.1625542
+    },
+    {
+        "id": 223,
+        "address": "840 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054588,
+        "lng": -94.20291399999999
+    },
+    {
+        "id": 224,
+        "address": "523 W HAWTHORN ST  Fayetteville AR 72701",
+        "lat": 36.0753358,
+        "lng": -94.16622799999999
+    },
+    {
+        "id": 225,
+        "address": "339 N WEST AVE  Unit: 206 FAYETTEVILLE AR 72701",
+        "lat": 36.0682801,
+        "lng": -94.16565229999999
+    },
+    {
+        "id": 226,
+        "address": "152 E GRANADA ST  Fayetteville AR 72703",
+        "lat": 36.1004822,
+        "lng": -94.1549555
+    },
+    {
+        "id": 227,
+        "address": "101 S HARTMAN AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0620644,
+        "lng": -94.1844768
+    },
+    {
+        "id": 228,
+        "address": "405 S WEST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0584261,
+        "lng": -94.16591400000001
+    },
+    {
+        "id": 229,
+        "address": "4317 W HAVANA AVE FAYETTEVILLE AR 72704",
+        "lat": 36.0607592,
+        "lng": -94.22240289999999
+    },
+    {
+        "id": 230,
+        "address": "2130 N GARLAND AVE Unit: 5 Fayetteville AR 72704",
+        "lat": 36.0908472,
+        "lng": -94.1739856
+    },
+    {
+        "id": 231,
+        "address": "2025 N EAST OAKS DR  Fayetteville AR 72703",
+        "lat": 36.0888097,
+        "lng": -94.1260368
+    },
+    {
+        "id": 232,
+        "address": "750 S JAYBIRD LN FAYETTEVILLE AR 72701",
+        "lat": 36.0546671,
+        "lng": -94.1458384
+    },
+    {
+        "id": 233,
+        "address": "122 W MEADOW ST  Unit: 14 Fayetteville AR 72701",
+        "lat": 36.0639394,
+        "lng": -94.16149349999999
+    },
+    {
+        "id": 234,
+        "address": "1260 N IRON HORSE DR  Fayetteville AR 72703",
+        "lat": 36.0788104,
+        "lng": -94.167683
+    },
+    {
+        "id": 235,
+        "address": "1625 W HALSELL RD  Fayetteville AR 72701",
+        "lat": 36.0685475,
+        "lng": -94.1833965
+    },
+    {
+        "id": 236,
+        "address": "213 E CENTER ST Fayetteville AR 72701",
+        "lat": 36.0624465,
+        "lng": -94.1563552
+    },
+    {
+        "id": 237,
+        "address": "513 W SELLE DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0405187,
+        "lng": -94.167394
+    },
+    {
+        "id": 238,
+        "address": "2612 E KANTZ DR  Fayetteville AR 72703",
+        "lat": 36.0913429,
+        "lng": -94.1239401
+    },
+    {
+        "id": 239,
+        "address": "227 S GREGG AVE  Fayetteville AR 72701",
+        "lat": 36.0603914,
+        "lng": -94.16714139999999
+    },
+    {
+        "id": 240,
+        "address": "215 N CHURCH AVE Unit: 1 Fayetteville AR 72701",
+        "lat": 36.065313,
+        "lng": -94.1622148
+    },
+    {
+        "id": 241,
+        "address": "2859 W HILLSHIRE DR  Fayetteville AR 72704",
+        "lat": 36.0614634,
+        "lng": -94.2005693
+    },
+    {
+        "id": 242,
+        "address": "1655 N BROADVIEW DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0836213,
+        "lng": -94.14789760000001
+    },
+    {
+        "id": 243,
+        "address": "1436 S DUNCAN AVE  Fayetteville AR 72701",
+        "lat": 36.0486511,
+        "lng": -94.1713942
+    },
+    {
+        "id": 244,
+        "address": "1921 N OLD WIRE RD  FAYETTEVILLE AR 72703",
+        "lat": 36.0876778,
+        "lng": -94.1424231
+    },
+    {
+        "id": 245,
+        "address": "405 S COLLEGE AVE  Fayetteville AR 72701",
+        "lat": 36.0579245,
+        "lng": -94.1583548
+    },
+    {
+        "id": 246,
+        "address": "1219 S DUNN AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.050526,
+        "lng": -94.16747400000001
+    },
+    {
+        "id": 247,
+        "address": "1656 N BROADVIEW DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0835358,
+        "lng": -94.1472989
+    },
+    {
+        "id": 248,
+        "address": "2216 W ORA DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0769668,
+        "lng": -94.1903474
+    },
+    {
+        "id": 249,
+        "address": "2922 W OLD FARMINGTON RD  FAYETTEVILLE AR 72704",
+        "lat": 36.0552232,
+        "lng": -94.2018854
+    },
+    {
+        "id": 250,
+        "address": "855 S HODDLE PL  Fayetteville AR 72701",
+        "lat": 36.05331049999999,
+        "lng": -94.1019348
+    },
+    {
+        "id": 251,
+        "address": "600 W MEADOW ST  Unit: 203 Fayetteville AR 72701",
+        "lat": 36.0640115,
+        "lng": -94.16676849999999
+    },
+    {
+        "id": 252,
+        "address": "3043 W MARIGOLD DR  Fayetteville AR 72704",
+        "lat": 36.0886241,
+        "lng": -94.2023978
+    },
+    {
+        "id": 253,
+        "address": "399 E MIMOSA LN FAYETTEVILLE AR 72703",
+        "lat": 36.103249,
+        "lng": -94.1521989
+    },
+    {
+        "id": 254,
+        "address": "2108 N GARLAND AVE  Unit: 4 Fayetteville AR 72704",
+        "lat": 36.0904599,
+        "lng": -94.1747602
+    },
+    {
+        "id": 255,
+        "address": "3285 N MARTIN AVE  FAYETTEVILLE AR 72703",
+        "lat": 36.1111685,
+        "lng": -94.1425199
+    },
+    {
+        "id": 256,
+        "address": "1420 N GARLAND AVE  Fayetteville AR 72703",
+        "lat": 36.0817346,
+        "lng": -94.1748346
+    },
+    {
+        "id": 257,
+        "address": "2728 E KANTZ DR Unit: 5 Fayetteville AR 72703",
+        "lat": 36.0912071,
+        "lng": -94.12216889999999
+    },
+    {
+        "id": 258,
+        "address": "2916 W OLD FARMINGTON RD  FAYETTEVILLE AR 72704",
+        "lat": 36.0553122,
+        "lng": -94.20176529999999
+    },
+    {
+        "id": 259,
+        "address": "319 W HOLLY ST  Fayetteville AR 72703",
+        "lat": 36.0791853,
+        "lng": -94.1639941
+    },
+    {
+        "id": 260,
+        "address": "222 W WATSON ST  FAYETTEVILLE AR 72701",
+        "lat": 36.06762459999999,
+        "lng": -94.16173429999999
+    },
+    {
+        "id": 261,
+        "address": "2922 N PEG LN  Fayetteville AR 72703",
+        "lat": 36.1057971,
+        "lng": -94.1544323
+    },
+    {
+        "id": 262,
+        "address": "112 W 7TH ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0557315,
+        "lng": -94.1616743
+    },
+    {
+        "id": 263,
+        "address": "608 S RAY AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0556098,
+        "lng": -94.1332451
+    },
+    {
+        "id": 264,
+        "address": "258 N SOLITUDE BND  Fayetteville AR 72704",
+        "lat": 36.0673379,
+        "lng": -94.2143751
+    },
+    {
+        "id": 265,
+        "address": "1256 N IRON HORSE DR  Fayetteville AR 72703",
+        "lat": 36.0787754,
+        "lng": -94.1676899
+    },
+    {
+        "id": 266,
+        "address": "258 W MILLER ST  Fayetteville AR 72703",
+        "lat": 36.0875885,
+        "lng": -94.16251419999999
+    },
+    {
+        "id": 267,
+        "address": "609 W DICKSON ST Unit: 501 FAYETTEVILLE AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 268,
+        "address": "37 N GARVIN DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0640581,
+        "lng": -94.1856772
+    },
+    {
+        "id": 269,
+        "address": "607 N WILSON AVE  Fayetteville AR 72701",
+        "lat": 36.0712186,
+        "lng": -94.166314
+    },
+    {
+        "id": 270,
+        "address": "521 N SHADY AVE Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.0706702,
+        "lng": -94.163462
+    },
+    {
+        "id": 271,
+        "address": "609 W DICKSON ST Unit: 704 Fayetteville AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 272,
+        "address": "600 W MEADOW ST  Unit: 301 Fayetteville AR 72701",
+        "lat": 36.0640115,
+        "lng": -94.16676849999999
+    },
+    {
+        "id": 273,
+        "address": "339 N WEST AVE  Unit: 209 Fayetteville AR 72701",
+        "lat": 36.0676831,
+        "lng": -94.165566
+    },
+    {
+        "id": 274,
+        "address": "609 W DICKSON ST Unit: 411 Fayetteville AR 72701",
+        "lat": 36.0659961,
+        "lng": -94.167191
+    },
+    {
+        "id": 275,
+        "address": "2130 N GARLAND AVE Unit: 3 FAYETTEVILLE AR 72704",
+        "lat": 36.0907912,
+        "lng": -94.17392749999999
+    },
+    {
+        "id": 276,
+        "address": "644 W DICKSON ST  Unit: 203 FAYETTEVILLE AR 72701",
+        "lat": 36.0669592,
+        "lng": -94.1676382
+    },
+    {
+        "id": 277,
+        "address": "600 W MEADOW ST  Unit: 303 Fayetteville AR 72701",
+        "lat": 36.0640115,
+        "lng": -94.16676849999999
+    },
+    {
+        "id": 278,
+        "address": "835 E RODGERS DR FAYETTEVILLE AR 72701",
+        "lat": 36.0613361,
+        "lng": -94.1467581
+    },
+    {
+        "id": 279,
+        "address": "600 W MEADOW ST  Unit: 104 Fayetteville AR 72701",
+        "lat": 36.0640115,
+        "lng": -94.16676849999999
+    },
+    {
+        "id": 280,
+        "address": "609 W DICKSON ST Unit: 604 Fayetteville AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 281,
+        "address": "3081 N JOHN WAYNE DR Fayetteville AR 72703",
+        "lat": 36.1075173,
+        "lng": -94.15987450000002
+    },
+    {
+        "id": 282,
+        "address": "2158 N GARLAND AVE  Unit: 3 Fayetteville AR 72704",
+        "lat": 36.0907927,
+        "lng": -94.17444929999999
+    },
+    {
+        "id": 283,
+        "address": "600 W MEADOW ST  Unit: 106 Fayetteville AR 72701",
+        "lat": 36.0641759,
+        "lng": -94.1669282
+    },
+    {
+        "id": 284,
+        "address": "512 N HIGHLAND AVE  Unit: B FAYETTEVILLE AR 72701",
+        "lat": 36.0703421,
+        "lng": -94.1589012
+    },
+    {
+        "id": 285,
+        "address": "421 W ADAMS ST  FAYETTEVILLE AR 72701",
+        "lat": 36.07618739999999,
+        "lng": -94.1647941
+    },
+    {
+        "id": 286,
+        "address": "644 W DICKSON ST  Unit: 212 Fayetteville AR 72701",
+        "lat": 36.0667753,
+        "lng": -94.1675461
+    },
+    {
+        "id": 287,
+        "address": "309 E LAFAYETTE ST  Unit: 202 Fayetteville AR 72701",
+        "lat": 36.0683053,
+        "lng": -94.15440439999999
+    },
+    {
+        "id": 288,
+        "address": "609 W DICKSON ST Unit: 404 Fayetteville AR 72701",
+        "lat": 36.0662896,
+        "lng": -94.1671695
+    },
+    {
+        "id": 289,
+        "address": "609 W DICKSON ST Unit: 609 Fayetteville AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 290,
+        "address": "644 W DICKSON ST  Unit: 210 FAYETTEVILLE AR 72701",
+        "lat": 36.066834,
+        "lng": -94.1676688
+    },
+    {
+        "id": 291,
+        "address": "1540 W NETTLESHIP ST  Unit: 14 Fayetteville AR 72701",
+        "lat": 36.0618923,
+        "lng": -94.18358169999999
+    },
+    {
+        "id": 292,
+        "address": "40 E MAPLE ST  Unit: 4 Fayetteville AR 72701",
+        "lat": 36.0701064,
+        "lng": -94.1584393
+    },
+    {
+        "id": 293,
+        "address": "609 W DICKSON ST Unit: 610 Fayetteville AR 72701",
+        "lat": 36.0659682,
+        "lng": -94.16701909999999
+    },
+    {
+        "id": 294,
+        "address": "609 W DICKSON ST Unit: 504 Fayetteville AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 295,
+        "address": "511 W CENTER ST FAYETTEVILLE AR 72701",
+        "lat": 36.0626203,
+        "lng": -94.1662984
+    },
+    {
+        "id": 296,
+        "address": "2855 N FIESTA DR Fayetteville AR 72703",
+        "lat": 36.1032107,
+        "lng": -94.1520789
+    },
+    {
+        "id": 297,
+        "address": "931 N OAK DR  Fayetteville AR 72701",
+        "lat": 36.0770554,
+        "lng": -94.18259619999999
+    },
+    {
+        "id": 298,
+        "address": "600 W MEADOW ST  Unit: 103 FAYETTEVILLE AR 72701",
+        "lat": 36.0640114,
+        "lng": -94.1667675
+    },
+    {
+        "id": 299,
+        "address": "3585 W PERSIMMON ST  Fayetteville AR 72704",
+        "lat": 36.0708721,
+        "lng": -94.2115326
+    },
+    {
+        "id": 300,
+        "address": "249 S GREGG AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0602936,
+        "lng": -94.1674231
+    },
+    {
+        "id": 301,
+        "address": "600 W MEADOW ST  Unit: 204 Fayetteville AR 72701",
+        "lat": 36.0640209,
+        "lng": -94.1668588
+    },
+    {
+        "id": 302,
+        "address": "644 W DICKSON ST  Unit: 210 Fayetteville AR 72701",
+        "lat": 36.066834,
+        "lng": -94.1676688
+    },
+    {
+        "id": 303,
+        "address": "122 W MEADOW ST  Unit: 8 Fayetteville AR 72701",
+        "lat": 36.0638652,
+        "lng": -94.1615037
+    },
+    {
+        "id": 304,
+        "address": "2827 W LAKEWOOD DR  FAYETTEVILLE AR 72704",
+        "lat": 36.0611416,
+        "lng": -94.2001925
+    },
+    {
+        "id": 305,
+        "address": "465 S LOCUST AVE  Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.0577231,
+        "lng": -94.1634512
+    },
+    {
+        "id": 306,
+        "address": "907 N OAKLAND AVE Unit: 1 FAYETTEVILLE AR 72701",
+        "lat": 36.0760213,
+        "lng": -94.1733144
+    },
+    {
+        "id": 307,
+        "address": "400 N OLIVER AVE  Unit: 2 Fayetteville AR 72701",
+        "lat": 36.06829460000001,
+        "lng": -94.1809158
+    },
+    {
+        "id": 308,
+        "address": "921 E LIGHTON TRL  FAYETTEVILLE AR 72701",
+        "lat": 36.0622612,
+        "lng": -94.1457585
+    },
+    {
+        "id": 309,
+        "address": "665 N GRAY AVE FAYETTEVILLE AR 72701",
+        "lat": 36.073268,
+        "lng": -94.1829964
+    },
+    {
+        "id": 310,
+        "address": "339 N WEST AVE  Unit: 210 FAYETTEVILLE AR 72701",
+        "lat": 36.06820829999999,
+        "lng": -94.165694
+    },
+    {
+        "id": 311,
+        "address": "820 N GARLAND AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0756175,
+        "lng": -94.1751295
+    },
+    {
+        "id": 312,
+        "address": "204 N SHIPLEY ALY  Unit: 103 FAYETTEVILLE AR 72701",
+        "lat": 36.06491860000001,
+        "lng": -94.16354919999999
+    },
+    {
+        "id": 313,
+        "address": "339 N WEST AVE  Unit: 210 Fayetteville AR 72701",
+        "lat": 36.06820829999999,
+        "lng": -94.165694
+    },
+    {
+        "id": 314,
+        "address": "1540 W NETTLESHIP ST  Unit: 15 Fayetteville AR 72701",
+        "lat": 36.0618443,
+        "lng": -94.1836445
+    },
+    {
+        "id": 315,
+        "address": "1899 W STONE ST Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0594669,
+        "lng": -94.1872027
+    },
+    {
+        "id": 316,
+        "address": "122 W MEADOW ST  Unit: 3 Fayetteville AR 72701",
+        "lat": 36.0638375,
+        "lng": -94.16133339999999
+    },
+    {
+        "id": 317,
+        "address": "322 E HUNTSVILLE RD FAYETTEVILLE AR 72701",
+        "lat": 36.058605,
+        "lng": -94.15404749999999
+    },
+    {
+        "id": 318,
+        "address": "954 S COLLEGE AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0525918,
+        "lng": -94.15803480000001
+    },
+    {
+        "id": 319,
+        "address": "518 W PROSPECT ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0739796,
+        "lng": -94.1659322
+    },
+    {
+        "id": 320,
+        "address": "400 N OLIVER AVE  Unit: 3 Fayetteville AR 72701",
+        "lat": 36.06829460000001,
+        "lng": -94.1809158
+    },
+    {
+        "id": 321,
+        "address": "833 N RUSH DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0746019,
+        "lng": -94.15063669999999
+    },
+    {
+        "id": 322,
+        "address": "313 E LAFAYETTE ST Unit: 203 Fayetteville AR 72701",
+        "lat": 36.0681104,
+        "lng": -94.15390119999999
+    },
+    {
+        "id": 323,
+        "address": "521 N SHADY AVE  Unit: 2 FAYETTEVILLE AR 72701",
+        "lat": 36.0707061,
+        "lng": -94.1634612
+    },
+    {
+        "id": 324,
+        "address": "1780 N WALNUT AVE  FAYETTEVILLE AR 72703",
+        "lat": 36.0860746,
+        "lng": -94.15235620000001
+    },
+    {
+        "id": 325,
+        "address": "907 N OAKLAND AVE Unit: 2 FAYETTEVILLE AR 72701",
+        "lat": 36.0760213,
+        "lng": -94.1733144
+    },
+    {
+        "id": 326,
+        "address": "208 N EAST AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0649295,
+        "lng": -94.1593546
+    },
+    {
+        "id": 327,
+        "address": "1788 N NOELLE AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0865706,
+        "lng": -94.17483399999999
+    },
+    {
+        "id": 328,
+        "address": "2501 W VALLEY DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0791025,
+        "lng": -94.1950213
+    },
+    {
+        "id": 329,
+        "address": "2403 N MAJESTIC DR  FAYETTEVILLE AR 72704",
+        "lat": 36.0963064,
+        "lng": -94.2103717
+    },
+    {
+        "id": 330,
+        "address": "4219 W ANTHEM DR FAYETTEVILLE AR 72704",
+        "lat": 36.0661238,
+        "lng": -94.2211816
+    },
+    {
+        "id": 331,
+        "address": "109 N SCHOOL AVE  Unit: 1 Fayetteville AR 72701",
+        "lat": 36.064118,
+        "lng": -94.1644338
+    },
+    {
+        "id": 332,
+        "address": "5 E DAVIDSON ST  Fayetteville AR 72701",
+        "lat": 36.0711076,
+        "lng": -94.1587522
+    },
+    {
+        "id": 333,
+        "address": "1563 S RAZORBACK RD Unit: 108 Fayetteville AR 72701",
+        "lat": 36.0484265,
+        "lng": -94.18124019999999
+    },
+    {
+        "id": 334,
+        "address": "119 N WASHINGTON AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0727652,
+        "lng": -94.1559605
+    },
+    {
+        "id": 335,
+        "address": "723 N OAKLAND AVE  Fayetteville AR 72701",
+        "lat": 36.0741823,
+        "lng": -94.1734743
+    },
+    {
+        "id": 336,
+        "address": "204 S SCHOOL AVE  Fayetteville AR 72701",
+        "lat": 36.0606089,
+        "lng": -94.16411409999999
+    },
+    {
+        "id": 337,
+        "address": "1052 W CATO SPRINGS RD  FAYETTEVILLE AR 72701",
+        "lat": 36.0415873,
+        "lng": -94.1757147
+    },
+    {
+        "id": 338,
+        "address": "3155 N OLD MISSOURI RD  FAYETTEVILLE AR 72703",
+        "lat": 36.1086201,
+        "lng": -94.13354179999999
+    },
+    {
+        "id": 339,
+        "address": "145 E BAXTER LN  Fayetteville AR 72701",
+        "lat": 36.0758215,
+        "lng": -94.15583529999999
+    },
+    {
+        "id": 340,
+        "address": "104 W SPRING ST Fayetteville AR 72701",
+        "lat": 36.0648942,
+        "lng": -94.1609868
+    },
+    {
+        "id": 341,
+        "address": "488 W LAWSON ST  Fayetteville AR 72703",
+        "lat": 36.0812611,
+        "lng": -94.16551109999999
+    },
+    {
+        "id": 342,
+        "address": "205 E 13TH ST Fayetteville AR 72701",
+        "lat": 36.0498257,
+        "lng": -94.15707499999999
+    },
+    {
+        "id": 343,
+        "address": "103 N SCHOOL AVE  Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0638981,
+        "lng": -94.1645515
+    },
+    {
+        "id": 344,
+        "address": "2630 E KANTZ DR FAYETTEVILLE AR 72703",
+        "lat": 36.0912744,
+        "lng": -94.12364699999999
+    },
+    {
+        "id": 345,
+        "address": "2785 E WYMAN RD  FAYETTEVILLE AR 72701",
+        "lat": 36.0580557,
+        "lng": -94.12253319999999
+    },
+    {
+        "id": 346,
+        "address": "2799 W AUBURN DR  Fayetteville AR 72704",
+        "lat": 36.0605042,
+        "lng": -94.199613
+    },
+    {
+        "id": 347,
+        "address": "420 N WILLOW AVE FAYETTEVILLE AR 72701",
+        "lat": 36.069176,
+        "lng": -94.15427559999999
+    },
+    {
+        "id": 348,
+        "address": "514 S BUCHANAN AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0576924,
+        "lng": -94.1723943
+    },
+    {
+        "id": 349,
+        "address": "9 E TRENTON BLVD  FAYETTEVILLE AR 72701",
+        "lat": 36.0721386,
+        "lng": -94.15838869999999
+    },
+    {
+        "id": 350,
+        "address": "619 N RUPPLE RD  Fayetteville AR 72704",
+        "lat": 36.073529,
+        "lng": -94.21790600000001
+    },
+    {
+        "id": 351,
+        "address": "299 E NOBLE LN  Fayetteville AR 72703",
+        "lat": 36.0799791,
+        "lng": -94.15454430000001
+    },
+    {
+        "id": 352,
+        "address": "1936 W ARROWHEAD ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0432148,
+        "lng": -94.1886784
+    },
+    {
+        "id": 353,
+        "address": "731 N WOOLSEY AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0744112,
+        "lng": -94.1622646
+    },
+    {
+        "id": 354,
+        "address": "414 W ILA ST FAYETTEVILLE AR 72701",
+        "lat": 36.071229,
+        "lng": -94.1653376
+    },
+    {
+        "id": 355,
+        "address": "522 W HAWTHORN ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0756953,
+        "lng": -94.166214
+    },
+    {
+        "id": 356,
+        "address": "400 E MAPLE ST  Fayetteville AR 72701",
+        "lat": 36.0700344,
+        "lng": -94.1528879
+    },
+    {
+        "id": 357,
+        "address": "3885 W SOMERVILLE LN FAYETTEVILLE AR 72704",
+        "lat": 36.0653425,
+        "lng": -94.21565629999999
+    },
+    {
+        "id": 358,
+        "address": "3504 W LA SALLE DR  Fayetteville AR 72704",
+        "lat": 36.089127,
+        "lng": -94.209611
+    },
+    {
+        "id": 359,
+        "address": "424 N HIGHLAND AVE  Fayetteville AR 72701",
+        "lat": 36.0693412,
+        "lng": -94.1586947
+    },
+    {
+        "id": 360,
+        "address": "837 N GREGG AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0747036,
+        "lng": -94.1667272
+    },
+    {
+        "id": 361,
+        "address": "26 S UNIVERSITY AVE  Unit: 101 FAYETTEVILLE AR 72701",
+        "lat": 36.06190590000001,
+        "lng": -94.1680775
+    },
+    {
+        "id": 362,
+        "address": "1752 N AUSTIN DR  Fayetteville AR 72703",
+        "lat": 36.0853694,
+        "lng": -94.1467583
+    },
+    {
+        "id": 363,
+        "address": "325 N GAME DAY VW  FAYETTEVILLE AR 72701",
+        "lat": 35.9980929,
+        "lng": -94.08999109999999
+    },
+    {
+        "id": 364,
+        "address": "1881 N SCULL CREEK DR FAYETTEVILLE AR 72703",
+        "lat": 36.0874484,
+        "lng": -94.168521
+    },
+    {
+        "id": 365,
+        "address": "158 E SOUTH ST FAYETTEVILLE AR 72701",
+        "lat": 36.0593277,
+        "lng": -94.1580178
+    },
+    {
+        "id": 366,
+        "address": "313 E NOBLE LN FAYETTEVILLE AR 72703",
+        "lat": 36.0800658,
+        "lng": -94.15433809999999
+    },
+    {
+        "id": 367,
+        "address": "262 N SOLITUDE BND  Fayetteville AR 72704",
+        "lat": 36.06737469999999,
+        "lng": -94.2145352
+    },
+    {
+        "id": 368,
+        "address": "1732 S GARLAND AVE  Fayetteville AR 72701",
+        "lat": 36.0456016,
+        "lng": -94.17615479999999
+    },
+    {
+        "id": 369,
+        "address": "308 N WASHINGTON AVE  Unit: 3 FAYETTEVILLE AR 72701",
+        "lat": 36.066705,
+        "lng": -94.1557876
+    },
+    {
+        "id": 370,
+        "address": "118 W BOLES ST Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0681953,
+        "lng": -94.16211609999999
+    },
+    {
+        "id": 371,
+        "address": "28 E 7TH ST Fayetteville AR 72701",
+        "lat": 36.0556804,
+        "lng": -94.1594746
+    },
+    {
+        "id": 372,
+        "address": "5706 W MICHAEL COLE DR  FAYETTEVILLE AR 72704",
+        "lat": 36.0776762,
+        "lng": -94.2446909
+    },
+    {
+        "id": 373,
+        "address": "1908 N COLLEGE AVE  Fayetteville AR 72703",
+        "lat": 36.0872973,
+        "lng": -94.1544215
+    },
+    {
+        "id": 374,
+        "address": "2069 N SHADY AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0897394,
+        "lng": -94.16283419999999
+    },
+    {
+        "id": 375,
+        "address": "1588 N DESOTO PL  FAYETTEVILLE AR 72703",
+        "lat": 36.0822266,
+        "lng": -94.153756
+    },
+    {
+        "id": 376,
+        "address": "3539 E GALAXY CIR  FAYETTEVILLE AR 72701",
+        "lat": 36.0871537,
+        "lng": -94.1117917
+    },
+    {
+        "id": 377,
+        "address": "1115 N OAKLAND AVE  Fayetteville AR 72703",
+        "lat": 36.0781413,
+        "lng": -94.1733144
+    },
+    {
+        "id": 378,
+        "address": "403 W SPRING ST Fayetteville AR 72701",
+        "lat": 36.0645903,
+        "lng": -94.1647625
+    },
+    {
+        "id": 379,
+        "address": "208 N COLLEGE AVE Fayetteville AR 72701",
+        "lat": 36.0649206,
+        "lng": -94.15752499999999
+    },
+    {
+        "id": 380,
+        "address": "847 S ROSE AVE FAYETTEVILLE AR 72701",
+        "lat": 36.05459889999999,
+        "lng": -94.1772712
+    },
+    {
+        "id": 381,
+        "address": "3130 S SCHOOL AVE  Fayetteville AR 72701",
+        "lat": 36.0280061,
+        "lng": -94.1722343
+    },
+    {
+        "id": 382,
+        "address": "318 E DICKSON ST Fayetteville AR 72701",
+        "lat": 36.0664679,
+        "lng": -94.1534958
+    },
+    {
+        "id": 383,
+        "address": "1907 W ARROWHEAD ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0428171,
+        "lng": -94.18791809999999
+    },
+    {
+        "id": 384,
+        "address": "340 N CAMPBELL AVE  Unit: 8 Fayetteville AR 72701",
+        "lat": 36.0672819,
+        "lng": -94.1632267
+    },
+    {
+        "id": 385,
+        "address": "1630 E MISSION BLVD FAYETTEVILLE AR 72703",
+        "lat": 36.0829976,
+        "lng": -94.138322
+    },
+    {
+        "id": 386,
+        "address": "340 N CAMPBELL AVE  Unit: 14 Fayetteville AR 72701",
+        "lat": 36.0673644,
+        "lng": -94.16314280000002
+    },
+    {
+        "id": 387,
+        "address": "1101 W CATO SPRINGS RD Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0411503,
+        "lng": -94.1766949
+    },
+    {
+        "id": 388,
+        "address": "1030 S HOLLYWOOD AVE Fayetteville AR 72701",
+        "lat": 36.0530547,
+        "lng": -94.1886784
+    },
+    {
+        "id": 389,
+        "address": "933 N OAKLAND AVE  Fayetteville AR 72701",
+        "lat": 36.0765257,
+        "lng": -94.1732303
+    },
+    {
+        "id": 390,
+        "address": "2765 N BARCELONA AVE Fayetteville AR 72703",
+        "lat": 36.1020337,
+        "lng": -94.1536649
+    },
+    {
+        "id": 391,
+        "address": "619 N RUPPLE RD FAYETTEVILLE AR 72704",
+        "lat": 36.073529,
+        "lng": -94.21790600000001
+    },
+    {
+        "id": 392,
+        "address": "1209 S IVORY BILL LN Fayetteville AR 72701",
+        "lat": 36.0505759,
+        "lng": -94.14763769999999
+    },
+    {
+        "id": 393,
+        "address": "275 E NOBLE LN FAYETTEVILLE AR 72703",
+        "lat": 36.0799694,
+        "lng": -94.1548538
+    },
+    {
+        "id": 394,
+        "address": "1476 W SUNSET PL  Fayetteville AR 72701",
+        "lat": 36.0764036,
+        "lng": -94.18162679999999
+    },
+    {
+        "id": 395,
+        "address": "129 S UNIVERSITY AVE  Fayetteville AR 72701",
+        "lat": 36.0599857,
+        "lng": -94.168634
+    },
+    {
+        "id": 396,
+        "address": "1436 S DUNCAN AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0486511,
+        "lng": -94.1713942
+    },
+    {
+        "id": 397,
+        "address": "239 S GREGG AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0604248,
+        "lng": -94.167284
+    },
+    {
+        "id": 398,
+        "address": "517 N FALLIN AVE  Fayetteville AR 72701",
+        "lat": 36.0708101,
+        "lng": -94.1489491
+    },
+    {
+        "id": 399,
+        "address": "1541 S BROOKS AVE Fayetteville AR 72701",
+        "lat": 36.0478854,
+        "lng": -94.1749873
+    },
+    {
+        "id": 400,
+        "address": "528 N COLLEGE AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0710218,
+        "lng": -94.1573193
+    },
+    {
+        "id": 401,
+        "address": "4 S HARTMAN AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0631263,
+        "lng": -94.1838166
+    },
+    {
+        "id": 402,
+        "address": "917 S HOLLYWOOD AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0535907,
+        "lng": -94.18911849999999
+    },
+    {
+        "id": 403,
+        "address": "310 E 7TH ST Fayetteville AR 72701",
+        "lat": 36.0554753,
+        "lng": -94.1555953
+    },
+    {
+        "id": 404,
+        "address": "533 W CENTER ST Fayetteville AR 72701",
+        "lat": 36.0622166,
+        "lng": -94.1662408
+    },
+    {
+        "id": 405,
+        "address": "2100 N FREEDOM PL  FAYETTEVILLE AR 72704",
+        "lat": 36.0918532,
+        "lng": -94.2231236
+    },
+    {
+        "id": 406,
+        "address": "2831 W WILDWOOD DR FAYETTEVILLE AR 72704",
+        "lat": 36.0888537,
+        "lng": -94.1994035
+    },
+    {
+        "id": 407,
+        "address": "510 E HUNTSVILLE RD  Fayetteville AR 72701",
+        "lat": 36.0576215,
+        "lng": -94.1527241
+    },
+    {
+        "id": 408,
+        "address": "747 N FOWLER AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.075339,
+        "lng": -94.18683759999999
+    },
+    {
+        "id": 409,
+        "address": "2014 W LAWSON ST  Fayetteville AR 72703",
+        "lat": 36.0813776,
+        "lng": -94.18813809999999
+    },
+    {
+        "id": 410,
+        "address": "1780 E HAMMOND ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0822118,
+        "lng": -94.1352838
+    },
+    {
+        "id": 411,
+        "address": "7 S WEST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.062469,
+        "lng": -94.16573799999999
+    },
+    {
+        "id": 412,
+        "address": "1206 N VISTA PL  Fayetteville AR 72703",
+        "lat": 36.0789856,
+        "lng": -94.18621739999999
+    },
+    {
+        "id": 413,
+        "address": "116 N SCHOOL AVE Fayetteville AR 72701",
+        "lat": 36.0643866,
+        "lng": -94.16403629999999
+    },
+    {
+        "id": 414,
+        "address": "5 E 28TH CIR  FAYETTEVILLE AR 72701",
+        "lat": 36.0329693,
+        "lng": -94.1606144
+    },
+    {
+        "id": 415,
+        "address": "2352 W HOUSTON ST  Fayetteville AR 72703",
+        "lat": 36.0845487,
+        "lng": -94.1919983
+    },
+    {
+        "id": 416,
+        "address": "533 E PROSPECT ST  Fayetteville AR 72701",
+        "lat": 36.0737171,
+        "lng": -94.1504767
+    },
+    {
+        "id": 417,
+        "address": "1370 N OAKLAND AVE Unit: 11 Fayetteville AR 72703",
+        "lat": 36.0805961,
+        "lng": -94.17233569999999
+    },
+    {
+        "id": 418,
+        "address": "1786 N NOELLE AVE  FAYETTEVILLE AR 72703",
+        "lat": 36.0865634,
+        "lng": -94.1746826
+    },
+    {
+        "id": 419,
+        "address": "1224 S WASHINGTON AVE  Fayetteville AR 72701",
+        "lat": 36.0504563,
+        "lng": -94.1569059
+    },
+    {
+        "id": 420,
+        "address": "1115 S ELLIS AVE  Fayetteville AR 72701",
+        "lat": 36.0518857,
+        "lng": -94.1703253
+    },
+    {
+        "id": 421,
+        "address": "1686 N STEPHENS AVE  Fayetteville AR 72703",
+        "lat": 36.0847334,
+        "lng": -94.1800356
+    },
+    {
+        "id": 422,
+        "address": "516 N ASSEMBLY DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0710824,
+        "lng": -94.146958
+    },
+    {
+        "id": 423,
+        "address": "601 N FOREST AVE  Fayetteville AR 72701",
+        "lat": 36.0714306,
+        "lng": -94.16019449999999
+    },
+    {
+        "id": 424,
+        "address": "1936 N RADCLIFFE AVE  Fayetteville AR 72704",
+        "lat": 36.0885411,
+        "lng": -94.2087904
+    },
+    {
+        "id": 425,
+        "address": "609 W DICKSON ST Unit: 502 Fayetteville AR 72701",
+        "lat": 36.0663489,
+        "lng": -94.1670723
+    },
+    {
+        "id": 426,
+        "address": "609 W DICKSON ST Unit: 603 Fayetteville AR 72701",
+        "lat": 36.0660776,
+        "lng": -94.1670372
+    },
+    {
+        "id": 427,
+        "address": "121 S DUNCAN AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0599664,
+        "lng": -94.1716342
+    },
+    {
+        "id": 428,
+        "address": "40 E MAPLE ST  Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0703322,
+        "lng": -94.1586219
+    },
+    {
+        "id": 429,
+        "address": "872 N OLIVE AVE  Fayetteville AR 72701",
+        "lat": 36.073353,
+        "lng": -94.1511965
+    },
+    {
+        "id": 430,
+        "address": "2992 W ANNE ST  Fayetteville AR 72704",
+        "lat": 36.0843823,
+        "lng": -94.2015696
+    },
+    {
+        "id": 431,
+        "address": "23 W NORTH ST  Fayetteville AR 72701",
+        "lat": 36.0769961,
+        "lng": -94.15987450000002
+    },
+    {
+        "id": 432,
+        "address": "426 N OLIVER AVE  Fayetteville AR 72701",
+        "lat": 36.0694721,
+        "lng": -94.18119589999999
+    },
+    {
+        "id": 433,
+        "address": "131 S UNIVERSITY AVE  Fayetteville AR 72701",
+        "lat": 36.0598495,
+        "lng": -94.16860729999999
+    },
+    {
+        "id": 434,
+        "address": "1949 N GREEN ACRES RD Unit: C Fayetteville AR 72703",
+        "lat": 36.0879242,
+        "lng": -94.1559214
+    },
+    {
+        "id": 435,
+        "address": "121 N WASHINGTON AVE Fayetteville AR 72701",
+        "lat": 36.0727652,
+        "lng": -94.1559605
+    },
+    {
+        "id": 436,
+        "address": "2939 N RAVEN LN FAYETTEVILLE AR 72704",
+        "lat": 36.1058669,
+        "lng": -94.2030262
+    },
+    {
+        "id": 437,
+        "address": "260 S SANG AVE  Fayetteville AR 72701",
+        "lat": 36.0604336,
+        "lng": -94.18898850000001
+    },
+    {
+        "id": 438,
+        "address": "314 E GRANADA ST  Fayetteville AR 72703",
+        "lat": 36.1004676,
+        "lng": -94.1530033
+    },
+    {
+        "id": 439,
+        "address": "865 W LORENA LN  FAYETTEVILLE AR 72701",
+        "lat": 36.0377939,
+        "lng": -94.17379439999999
+    },
+    {
+        "id": 440,
+        "address": "1680 E HAMMOND ST  Unit: Tinyhouse Fayetteville AR 72701",
+        "lat": 36.0821831,
+        "lng": -94.1361591
+    },
+    {
+        "id": 441,
+        "address": "3208 E PAWNEE CT  FAYETTEVILLE AR 72701",
+        "lat": 36.084885,
+        "lng": -94.1154597
+    },
+    {
+        "id": 442,
+        "address": "918 S ELMHURST AVE  Fayetteville AR 72701",
+        "lat": 36.0529856,
+        "lng": -94.1509366
+    },
+    {
+        "id": 443,
+        "address": "44 N PALMER AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.064075,
+        "lng": -94.1827563
+    },
+    {
+        "id": 444,
+        "address": "5 E TRENTON BLVD  Fayetteville AR 72701",
+        "lat": 36.0721561,
+        "lng": -94.1588347
+    },
+    {
+        "id": 445,
+        "address": "947 S WOOD AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0531504,
+        "lng": -94.1539935
+    },
+    {
+        "id": 446,
+        "address": "430 N HIGHLAND AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0696804,
+        "lng": -94.1586947
+    },
+    {
+        "id": 447,
+        "address": "2950 W SAUTER LN FAYETTEVILLE AR 72704",
+        "lat": 36.09147189999999,
+        "lng": -94.20014429999999
+    },
+    {
+        "id": 448,
+        "address": "1775 W MITCHELL ST Unit: 8 Fayetteville AR 72701",
+        "lat": 36.05789900000001,
+        "lng": -94.1864705
+    },
+    {
+        "id": 449,
+        "address": "600 E HUNTSVILLE RD  Fayetteville AR 72701",
+        "lat": 36.0565521,
+        "lng": -94.1514364
+    },
+    {
+        "id": 450,
+        "address": "393 N AINSLEY LOOP  FAYETTEVILLE AR 72704",
+        "lat": 36.0686781,
+        "lng": -94.2100114
+    },
+    {
+        "id": 451,
+        "address": "1520 W MARKHAM RD FAYETTEVILLE AR 72701",
+        "lat": 36.0670888,
+        "lng": -94.18205610000001
+    },
+    {
+        "id": 452,
+        "address": "2824 E LOVERS LN  Fayetteville AR 72701",
+        "lat": 36.0781315,
+        "lng": -94.1146405
+    },
+    {
+        "id": 453,
+        "address": "368 W 5TH ST  Fayetteville AR 72701",
+        "lat": 36.0575103,
+        "lng": -94.1640592
+    },
+    {
+        "id": 454,
+        "address": "660 W WHILLOCK ST  Fayetteville AR 72701",
+        "lat": 36.026254,
+        "lng": -94.17015409999999
+    },
+    {
+        "id": 455,
+        "address": "1784 N NOELLE AVE  FAYETTEVILLE AR 72703",
+        "lat": 36.0865639,
+        "lng": -94.1745171
+    },
+    {
+        "id": 456,
+        "address": "210 E SPRING ST  Fayetteville AR 72701",
+        "lat": 36.0647747,
+        "lng": -94.155281
+    },
+    {
+        "id": 457,
+        "address": "849 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.05447700000001,
+        "lng": -94.20353399999999
+    },
+    {
+        "id": 458,
+        "address": "1038 S HOLLYWOOD AVE Fayetteville AR 72701",
+        "lat": 36.0526292,
+        "lng": -94.1887184
+    },
+    {
+        "id": 459,
+        "address": "1229 S ELLIS AVE  Fayetteville AR 72701",
+        "lat": 36.050522,
+        "lng": -94.1700341
+    },
+    {
+        "id": 460,
+        "address": "424 W PATRICIA LN Fayetteville AR 72703",
+        "lat": 36.0787458,
+        "lng": -94.1655985
+    },
+    {
+        "id": 461,
+        "address": "318 E PROSPECT ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0741917,
+        "lng": -94.15396989999999
+    },
+    {
+        "id": 462,
+        "address": "2624 N WARD DR FAYETTEVILLE AR 72704",
+        "lat": 36.0988441,
+        "lng": -94.1899189
+    },
+    {
+        "id": 463,
+        "address": "4165 W MARLOWE LN  Fayetteville AR 72704",
+        "lat": 36.0718407,
+        "lng": -94.22018059999999
+    },
+    {
+        "id": 464,
+        "address": "813 N LINDELL AVE  Fayetteville AR 72701",
+        "lat": 36.0751769,
+        "lng": -94.1744345
+    },
+    {
+        "id": 465,
+        "address": "4439 W TOPEKA AVE FAYETTEVILLE AR 72704",
+        "lat": 36.06152,
+        "lng": -94.224395
+    },
+    {
+        "id": 466,
+        "address": "118 E LAFAYETTE ST  Fayetteville AR 72701",
+        "lat": 36.068726,
+        "lng": -94.1568545
+    },
+    {
+        "id": 467,
+        "address": "444 E MALINDA DR  Fayetteville AR 72703",
+        "lat": 36.1093814,
+        "lng": -94.1513165
+    },
+    {
+        "id": 468,
+        "address": "1411 N VIEWPOINT DR  Fayetteville AR 72701",
+        "lat": 36.0805283,
+        "lng": -94.134924
+    },
+    {
+        "id": 469,
+        "address": "596 N KEATS DR  Fayetteville AR 72704",
+        "lat": 36.0732028,
+        "lng": -94.22033080000001
+    },
+    {
+        "id": 470,
+        "address": "19 W MARTIN LUTHER KING JR BLVD  Fayetteville AR 72701",
+        "lat": 36.0561506,
+        "lng": -94.1605945
+    },
+    {
+        "id": 471,
+        "address": "662 S CHURCH AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0558599,
+        "lng": -94.1618814
+    },
+    {
+        "id": 472,
+        "address": "232 N FLETCHER AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0656367,
+        "lng": -94.1500633
+    },
+    {
+        "id": 473,
+        "address": "2 N RANCH DR  FAYETTEVILLE AR 72703",
+        "lat": 36.08156,
+        "lng": -94.144359
+    },
+    {
+        "id": 474,
+        "address": "1499 N WEATHERWOOD CT  Fayetteville AR 72704",
+        "lat": 36.0828348,
+        "lng": -94.2052877
+    },
+    {
+        "id": 475,
+        "address": "305 W LAFAYETTE ST  Unit: 5 Fayetteville AR 72701",
+        "lat": 36.0683621,
+        "lng": -94.1631762
+    },
+    {
+        "id": 476,
+        "address": "815 N LINDELL AVE  Unit: C FAYETTEVILLE AR 72701",
+        "lat": 36.0753853,
+        "lng": -94.17440619999999
+    },
+    {
+        "id": 477,
+        "address": "123 N WASHINGTON AVE Fayetteville AR 72701",
+        "lat": 36.0727652,
+        "lng": -94.1559605
+    },
+    {
+        "id": 478,
+        "address": "3113 N RAVEN LN  Fayetteville AR 72704",
+        "lat": 36.1090031,
+        "lng": -94.2030262
+    },
+    {
+        "id": 479,
+        "address": "2812 W BLACKSTONE XING  Fayetteville AR 72704",
+        "lat": 36.06102,
+        "lng": -94.19979359999999
+    },
+    {
+        "id": 480,
+        "address": "218 E SOUTH ST FAYETTEVILLE AR 72701",
+        "lat": 36.0593277,
+        "lng": -94.1580178
+    },
+    {
+        "id": 481,
+        "address": "1651 N BROADVIEW DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0831916,
+        "lng": -94.1478942
+    },
+    {
+        "id": 482,
+        "address": "340 N CAMPBELL AVE  Unit: 13 Fayetteville AR 72701",
+        "lat": 36.0672819,
+        "lng": -94.1632267
+    },
+    {
+        "id": 483,
+        "address": "405 W SPRING ST  Fayetteville AR 72701",
+        "lat": 36.0646515,
+        "lng": -94.16480299999999
+    },
+    {
+        "id": 484,
+        "address": "1626 E MISSION BLVD FAYETTEVILLE AR 72703",
+        "lat": 36.0829293,
+        "lng": -94.13834390000001
+    },
+    {
+        "id": 485,
+        "address": "241 W DICKSON ST  Unit: 201 Fayetteville AR 72701",
+        "lat": 36.0662063,
+        "lng": -94.16259
+    },
+    {
+        "id": 486,
+        "address": "903 N GREGG AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.075531,
+        "lng": -94.166674
+    },
+    {
+        "id": 487,
+        "address": "314 S BLOCK AVE  Fayetteville AR 72701",
+        "lat": 36.0585721,
+        "lng": -94.16047449999999
+    },
+    {
+        "id": 488,
+        "address": "525 N COLLEGE AVE Unit: C102 Fayetteville AR 72701",
+        "lat": 36.0708144,
+        "lng": -94.1583558
+    },
+    {
+        "id": 489,
+        "address": "1830 N WOOLSEY AVE  Fayetteville AR 72703",
+        "lat": 36.0868875,
+        "lng": -94.1613344
+    },
+    {
+        "id": 490,
+        "address": "887 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.0543084,
+        "lng": -94.2034035
+    },
+    {
+        "id": 491,
+        "address": "1640 N LINDA JO PL Fayetteville AR 72703",
+        "lat": 36.0841493,
+        "lng": -94.19115289999999
+    },
+    {
+        "id": 492,
+        "address": "553 E MCCLINTON ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0519408,
+        "lng": -94.1524226
+    },
+    {
+        "id": 493,
+        "address": "935 N SUNSET DR  Fayetteville AR 72701",
+        "lat": 36.07662,
+        "lng": -94.1810958
+    },
+    {
+        "id": 494,
+        "address": "2608 E KANTZ DR  Fayetteville AR 72703",
+        "lat": 36.0914708,
+        "lng": -94.1239361
+    },
+    {
+        "id": 495,
+        "address": "3861 W MACLURA WAY  Fayetteville AR 72704",
+        "lat": 36.0661622,
+        "lng": -94.2152559
+    },
+    {
+        "id": 496,
+        "address": "60 W WILLOUGHBY RD  FAYETTEVILLE AR 72701",
+        "lat": 36.0207936,
+        "lng": -94.16090439999999
+    },
+    {
+        "id": 497,
+        "address": "227 N STONE BRIDGE RD Fayetteville AR 72701",
+        "lat": 36.0644289,
+        "lng": -94.12254
+    },
+    {
+        "id": 498,
+        "address": "1775 W MITCHELL ST Unit: 16 Fayetteville AR 72701",
+        "lat": 36.0578921,
+        "lng": -94.18652809999999
+    },
+    {
+        "id": 499,
+        "address": "231 S GREGG AVE  Fayetteville AR 72701",
+        "lat": 36.06033559999999,
+        "lng": -94.1671879
+    },
+    {
+        "id": 500,
+        "address": "1810 E OVERCREST ST  Fayetteville AR 72703",
+        "lat": 36.0911722,
+        "lng": -94.1348441
+    },
+    {
+        "id": 501,
+        "address": "473 N OLIVER AVE  Fayetteville AR 72701",
+        "lat": 36.070235,
+        "lng": -94.181816
+    },
+    {
+        "id": 502,
+        "address": "2990 W ANNE ST  Fayetteville AR 72704",
+        "lat": 36.0843681,
+        "lng": -94.20157209999999
+    },
+    {
+        "id": 503,
+        "address": "7 S WEST AVE  Fayetteville AR 72701",
+        "lat": 36.062469,
+        "lng": -94.16573799999999
+    },
+    {
+        "id": 504,
+        "address": "423 W PATRICIA LN  Fayetteville AR 72703",
+        "lat": 36.07828190000001,
+        "lng": -94.165594
+    },
+    {
+        "id": 505,
+        "address": "931 N POLLARD AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0759178,
+        "lng": -94.158074
+    },
+    {
+        "id": 506,
+        "address": "241 W MOUNTAIN ST  Fayetteville AR 72701",
+        "lat": 36.0617078,
+        "lng": -94.1629942
+    },
+    {
+        "id": 507,
+        "address": "135 N OKLAHOMA WAY  FAYETTEVILLE AR 72701",
+        "lat": 36.0643612,
+        "lng": -94.14879069999999
+    },
+    {
+        "id": 508,
+        "address": "438 E MIMOSA LN  FAYETTEVILLE AR 72703",
+        "lat": 36.1036514,
+        "lng": -94.15155639999999
+    },
+    {
+        "id": 509,
+        "address": "510 W LAWSON ST  Fayetteville AR 72703",
+        "lat": 36.0812406,
+        "lng": -94.16533989999999
+    },
+    {
+        "id": 510,
+        "address": "830 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054902,
+        "lng": -94.202905
+    },
+    {
+        "id": 511,
+        "address": "1767 N POINTER LN  Fayetteville AR 72701",
+        "lat": 36.0848036,
+        "lng": -94.11877369999999
+    },
+    {
+        "id": 512,
+        "address": "352 W 5TH ST FAYETTEVILLE AR 72701",
+        "lat": 36.0575031,
+        "lng": -94.16388740000001
+    },
+    {
+        "id": 513,
+        "address": "3026 W OLD FARMINGTON RD FAYETTEVILLE AR 72704",
+        "lat": 36.0539359,
+        "lng": -94.2035265
+    },
+    {
+        "id": 514,
+        "address": "615 W MOAN PL Fayetteville AR 72703",
+        "lat": 36.0834582,
+        "lng": -94.1665497
+    },
+    {
+        "id": 515,
+        "address": "930 S COLLEGE AVE  Fayetteville AR 72701",
+        "lat": 36.0527642,
+        "lng": -94.1579549
+    },
+    {
+        "id": 516,
+        "address": "612 N STORER AVE  Unit: 2 FAYETTEVILLE AR 72701",
+        "lat": 36.0726997,
+        "lng": -94.17199169999999
+    },
+    {
+        "id": 517,
+        "address": "1850 N SCULL CREEK DR Fayetteville AR 72703",
+        "lat": 36.0870603,
+        "lng": -94.16840309999999
+    },
+    {
+        "id": 518,
+        "address": "272 S SLOPESIDE DR  Fayetteville AR 72704",
+        "lat": 36.060702,
+        "lng": -94.19901600000001
+    },
+    {
+        "id": 519,
+        "address": "2488 E JOYCE BLVD  Fayetteville AR 72703",
+        "lat": 36.122283,
+        "lng": -94.125913
+    },
+    {
+        "id": 520,
+        "address": "1647 N BROADVIEW DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0831997,
+        "lng": -94.1479052
+    },
+    {
+        "id": 521,
+        "address": "1563 S RAZORBACK RD Unit: 302 Fayetteville AR 72701",
+        "lat": 36.0481895,
+        "lng": -94.18133449999999
+    },
+    {
+        "id": 522,
+        "address": "20 S HILL AVE  Fayetteville AR 72701",
+        "lat": 36.0622698,
+        "lng": -94.1694141
+    },
+    {
+        "id": 523,
+        "address": "3225 N KINGS CRS  FAYETTEVILLE AR 72703",
+        "lat": 36.1095015,
+        "lng": -94.1244516
+    },
+    {
+        "id": 524,
+        "address": "121 W BOLES ST Fayetteville AR 72701",
+        "lat": 36.0679009,
+        "lng": -94.1617143
+    },
+    {
+        "id": 525,
+        "address": "315 N ROLLSTON AVE  Unit: 206 Fayetteville AR 72701",
+        "lat": 36.0669742,
+        "lng": -94.16323200000001
+    },
+    {
+        "id": 526,
+        "address": "403 N WASHINGTON AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0687118,
+        "lng": -94.1564418
+    },
+    {
+        "id": 527,
+        "address": "618 S BLOCK AVE  Fayetteville AR 72701",
+        "lat": 36.0555993,
+        "lng": -94.1605945
+    },
+    {
+        "id": 528,
+        "address": "3508 W VASSAR ST  Fayetteville AR 72704",
+        "lat": 36.0825641,
+        "lng": -94.2099913
+    },
+    {
+        "id": 529,
+        "address": "1052 W CATO SPRINGS RD FAYETTEVILLE AR 72701",
+        "lat": 36.0415873,
+        "lng": -94.1757147
+    },
+    {
+        "id": 530,
+        "address": "1111 N OAKLAND AVE Fayetteville AR 72703",
+        "lat": 36.0780264,
+        "lng": -94.17334830000001
+    },
+    {
+        "id": 531,
+        "address": "2988 W ANNE ST  Fayetteville AR 72704",
+        "lat": 36.0843699,
+        "lng": -94.2015382
+    },
+    {
+        "id": 532,
+        "address": "1117 S ELLIS AVE  Fayetteville AR 72701",
+        "lat": 36.0509246,
+        "lng": -94.17013399999999
+    },
+    {
+        "id": 533,
+        "address": "2345 E AMHERST ALY FAYETTEVILLE AR 72703",
+        "lat": 36.129883,
+        "lng": -94.127809
+    },
+    {
+        "id": 534,
+        "address": "4410 W SWEETGUM LN FAYETTEVILLE AR 72704",
+        "lat": 36.0521985,
+        "lng": -94.22406409999999
+    },
+    {
+        "id": 535,
+        "address": "2144 W LOREN CIR  Fayetteville AR 72701",
+        "lat": 36.0718533,
+        "lng": -94.1895476
+    },
+    {
+        "id": 536,
+        "address": "330 W 5TH ST FAYETTEVILLE AR 72701",
+        "lat": 36.0574632,
+        "lng": -94.1637411
+    },
+    {
+        "id": 537,
+        "address": "1626 W MITCHELL ST  Fayetteville AR 72701",
+        "lat": 36.0585185,
+        "lng": -94.1846169
+    },
+    {
+        "id": 538,
+        "address": "374 W 5TH ST  Fayetteville AR 72701",
+        "lat": 36.0575128,
+        "lng": -94.1641258
+    },
+    {
+        "id": 539,
+        "address": "315 N ROLLSTON AVE Unit: 204 Fayetteville AR 72701",
+        "lat": 36.0669742,
+        "lng": -94.16323200000001
+    },
+    {
+        "id": 540,
+        "address": "117 N SCHOOL AVE Unit: 4 FAYETTEVILLE AR 72701",
+        "lat": 36.0644048,
+        "lng": -94.1645133
+    },
+    {
+        "id": 541,
+        "address": "2640 N STAGECOACH DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0996541,
+        "lng": -94.1353438
+    },
+    {
+        "id": 542,
+        "address": "1637 N BROADVIEW DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0830105,
+        "lng": -94.1477938
+    },
+    {
+        "id": 543,
+        "address": "2790 N GOLDEN EAGLE DR  FAYETTEVILLE AR 72703",
+        "lat": 36.1021273,
+        "lng": -94.14659809999999
+    },
+    {
+        "id": 544,
+        "address": "1212 N SANG AVE  FAYETTEVILLE AR 72703",
+        "lat": 36.0792467,
+        "lng": -94.1884583
+    },
+    {
+        "id": 545,
+        "address": "122 W MEADOW ST  Unit: 4 Fayetteville AR 72701",
+        "lat": 36.0638353,
+        "lng": -94.1613862
+    },
+    {
+        "id": 546,
+        "address": "333 W SOUTH ST  Fayetteville AR 72701",
+        "lat": 36.0590862,
+        "lng": -94.164053
+    },
+    {
+        "id": 547,
+        "address": "515 N PARK AVE  Fayetteville AR 72701",
+        "lat": 36.0705549,
+        "lng": -94.16099439999999
+    },
+    {
+        "id": 548,
+        "address": "2723 E JOYCE BLVD Fayetteville AR 72703",
+        "lat": 36.119414,
+        "lng": -94.12229500000001
+    },
+    {
+        "id": 549,
+        "address": "1340 N MISSION BLVD  Fayetteville AR 72701",
+        "lat": 36.0802343,
+        "lng": -94.14596999999999
+    },
+    {
+        "id": 550,
+        "address": "356 E DICKSON ST FAYETTEVILLE AR 72701",
+        "lat": 36.06641190000001,
+        "lng": -94.1532759
+    },
+    {
+        "id": 551,
+        "address": "1003 W HUGHES ST  Fayetteville AR 72701",
+        "lat": 36.0766464,
+        "lng": -94.1749042
+    },
+    {
+        "id": 552,
+        "address": "9 W DAVIDSON ST  Fayetteville AR 72701",
+        "lat": 36.0710259,
+        "lng": -94.1595548
+    },
+    {
+        "id": 553,
+        "address": "682 W SYCAMORE ST  Fayetteville AR 72703",
+        "lat": 36.0849009,
+        "lng": -94.16753829999999
+    },
+    {
+        "id": 554,
+        "address": "1330 N MISSION BLVD  Fayetteville AR 72701",
+        "lat": 36.0799265,
+        "lng": -94.1462383
+    },
+    {
+        "id": 555,
+        "address": "1620 W MITCHELL ST Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0584755,
+        "lng": -94.18459899999999
+    },
+    {
+        "id": 556,
+        "address": "257 N SOLITUDE BND  FAYETTEVILLE AR 72704",
+        "lat": 36.0669577,
+        "lng": -94.2143351
+    },
+    {
+        "id": 557,
+        "address": "134 E SOUTH ST FAYETTEVILLE AR 72701",
+        "lat": 36.0593277,
+        "lng": -94.1580178
+    },
+    {
+        "id": 558,
+        "address": "1417 S KINGFISHER LN FAYETTEVILLE AR 72701",
+        "lat": 36.0485948,
+        "lng": -94.1472778
+    },
+    {
+        "id": 559,
+        "address": "431 W PATRICIA LN  Fayetteville AR 72703",
+        "lat": 36.0782495,
+        "lng": -94.1658978
+    },
+    {
+        "id": 560,
+        "address": "532 S BLAIR AVE  Fayetteville AR 72701",
+        "lat": 36.05643269999999,
+        "lng": -94.15028679999999
+    },
+    {
+        "id": 561,
+        "address": "399 E MIMOSA LN  Fayetteville AR 72703",
+        "lat": 36.103249,
+        "lng": -94.1521989
+    },
+    {
+        "id": 562,
+        "address": "922 E ROCKWOOD TRL FAYETTEVILLE AR 72701",
+        "lat": 36.0735269,
+        "lng": -94.1461583
+    },
+    {
+        "id": 563,
+        "address": "147 S GRAHAM AVE  Fayetteville AR 72701",
+        "lat": 36.0618933,
+        "lng": -94.1820221
+    },
+    {
+        "id": 564,
+        "address": "1739 N CAROLYN DR  Fayetteville AR 72701",
+        "lat": 36.0816552,
+        "lng": -94.1354437
+    },
+    {
+        "id": 565,
+        "address": "536 W 15TH ST FAYETTEVILLE AR 72701",
+        "lat": 36.0485478,
+        "lng": -94.167034
+    },
+    {
+        "id": 566,
+        "address": "2110 W LOREN CIR FAYETTEVILLE AR 72701",
+        "lat": 36.0714287,
+        "lng": -94.1907593
+    },
+    {
+        "id": 567,
+        "address": "1478 W SUNSET PL  Fayetteville AR 72701",
+        "lat": 36.0763557,
+        "lng": -94.181721
+    },
+    {
+        "id": 568,
+        "address": "349 E BAXTER LN  FAYETTEVILLE AR 72701",
+        "lat": 36.0758293,
+        "lng": -94.15315590000002
+    },
+    {
+        "id": 569,
+        "address": "614 W DOUGLAS ST FAYETTEVILLE AR 72701",
+        "lat": 36.0718975,
+        "lng": -94.168134
+    },
+    {
+        "id": 570,
+        "address": "124 W SOUTH ST  Fayetteville AR 72701",
+        "lat": 36.0593776,
+        "lng": -94.16179799999999
+    },
+    {
+        "id": 571,
+        "address": "1201 N WOOLSEY AVE  Fayetteville AR 72703",
+        "lat": 36.0784435,
+        "lng": -94.1621543
+    },
+    {
+        "id": 572,
+        "address": "2856 N SUNNY LN  FAYETTEVILLE AR 72703",
+        "lat": 36.1036891,
+        "lng": -94.15659509999999
+    },
+    {
+        "id": 573,
+        "address": "340 N CAMPBELL AVE  Unit: 7 Fayetteville AR 72701",
+        "lat": 36.067231,
+        "lng": -94.1631597
+    },
+    {
+        "id": 574,
+        "address": "2586 N WARD DR FAYETTEVILLE AR 72704",
+        "lat": 36.0988669,
+        "lng": -94.19047909999999
+    },
+    {
+        "id": 575,
+        "address": "569 N TENNYSON LN  Fayetteville AR 72704",
+        "lat": 36.072754,
+        "lng": -94.2198303
+    },
+    {
+        "id": 576,
+        "address": "36 E SOUTH ST  FAYETTEVILLE AR 72701",
+        "lat": 36.0593277,
+        "lng": -94.1580178
+    },
+    {
+        "id": 577,
+        "address": "222 S BLOCK AVE FAYETTEVILLE AR 72701",
+        "lat": 36.06023700000001,
+        "lng": -94.16019480000001
+    },
+    {
+        "id": 578,
+        "address": "1621 N BROADVIEW DR  FAYETTEVILLE AR 72703",
+        "lat": 36.0830078,
+        "lng": -94.14774249999999
+    },
+    {
+        "id": 579,
+        "address": "717 S JAYBIRD LN Fayetteville AR 72701",
+        "lat": 36.0549899,
+        "lng": -94.1463182
+    },
+    {
+        "id": 580,
+        "address": "400 N OLIVER AVE  Fayetteville AR 72701",
+        "lat": 36.06829460000001,
+        "lng": -94.1809158
+    },
+    {
+        "id": 581,
+        "address": "631 N WILLOW AVE  Unit: B Fayetteville AR 72701",
+        "lat": 36.0722986,
+        "lng": -94.1547155
+    },
+    {
+        "id": 582,
+        "address": "405 S MASHBURN AVE  FAYETTEVILLE AR 72701",
+        "lat": 36.0579995,
+        "lng": -94.1512765
+    },
+    {
+        "id": 583,
+        "address": "282 S SLOPESIDE DR  Fayetteville AR 72704",
+        "lat": 36.060519,
+        "lng": -94.19892
+    },
+    {
+        "id": 584,
+        "address": "5540 S GEORGE ANDERSON RD  Fayetteville AR 72764",
+        "lat": 36.1342369,
+        "lng": -94.10460429999999
+    },
+    {
+        "id": 585,
+        "address": "3484 W CHEVAUX DR FAYETTEVILLE AR 72704",
+        "lat": 36.0801682,
+        "lng": -94.20970919999999
+    },
+    {
+        "id": 586,
+        "address": "1251 N SICILY LN Fayetteville AR 72704",
+        "lat": 36.0809956,
+        "lng": -94.2202607
+    },
+    {
+        "id": 587,
+        "address": "4539 W PERSIMMON ST  Fayetteville AR 72704",
+        "lat": 36.0717048,
+        "lng": -94.2264658
+    },
+    {
+        "id": 588,
+        "address": "5012 W COLFAX LOOP FAYETTEVILLE AR 72704",
+        "lat": 36.0537342,
+        "lng": -94.23103259999999
+    },
+    {
+        "id": 589,
+        "address": "1340 N MISSION BLVD  FAYETTEVILLE AR 72701",
+        "lat": 36.0802343,
+        "lng": -94.14596999999999
+    },
+    {
+        "id": 590,
+        "address": "1775 W MITCHELL ST Unit: 9 Fayetteville AR 72701",
+        "lat": 36.0576043,
+        "lng": -94.1862678
+    },
+    {
+        "id": 591,
+        "address": "3449 W TUSCAN RD Fayetteville AR 72704",
+        "lat": 36.0741421,
+        "lng": -94.21017150000002
+    },
+    {
+        "id": 592,
+        "address": "614 W LAFAYETTE ST  Fayetteville AR 72701",
+        "lat": 36.0685577,
+        "lng": -94.167234
+    },
+    {
+        "id": 593,
+        "address": "2351 N HOSTA DR Fayetteville AR 72704",
+        "lat": 36.0953523,
+        "lng": -94.22306359999999
+    },
+    {
+        "id": 594,
+        "address": "2604 E KANTZ DR  Fayetteville AR 72703",
+        "lat": 36.0911744,
+        "lng": -94.1239162
+    },
+    {
+        "id": 595,
+        "address": "237 S GREGG AVE  Fayetteville AR 72701",
+        "lat": 36.0603434,
+        "lng": -94.1672559
+    },
+    {
+        "id": 596,
+        "address": "526 E DICKSON ST Unit: 1 Fayetteville AR 72701",
+        "lat": 36.0663073,
+        "lng": -94.15130599999999
+    },
+    {
+        "id": 597,
+        "address": "243 S GREGG AVE  Fayetteville AR 72701",
+        "lat": 36.0604289,
+        "lng": -94.1674005
+    },
+    {
+        "id": 598,
+        "address": "3594 W CHEVAUX DR FAYETTEVILLE AR 72704",
+        "lat": 36.0799779,
+        "lng": -94.210453
+    },
+    {
+        "id": 599,
+        "address": "333 N GAME DAY VW  FAYETTEVILLE AR 72701",
+        "lat": 35.9980929,
+        "lng": -94.08999109999999
+    },
+    {
+        "id": 600,
+        "address": "526 N FALLIN AVE  Fayetteville AR 72701",
+        "lat": 36.0705689,
+        "lng": -94.1483645
+    },
+    {
+        "id": 601,
+        "address": "1769 N POINTER LN  Fayetteville AR 72701",
+        "lat": 36.0848665,
+        "lng": -94.1187937
+    },
+    {
+        "id": 602,
+        "address": "2497 N WILDERNESS LN  Fayetteville AR 72703",
+        "lat": 36.0966701,
+        "lng": -94.1425998
+    },
+    {
+        "id": 603,
+        "address": "1935 N RADCLIFFE AVE Fayetteville AR 72704",
+        "lat": 36.0885024,
+        "lng": -94.20929079999999
+    },
+    {
+        "id": 604,
+        "address": "260 E MARTIN LUTHER KING JR BLVD  Unit: 3 Fayetteville AR 72701",
+        "lat": 36.0563452,
+        "lng": -94.1598204
+    },
+    {
+        "id": 605,
+        "address": "242 S LOCUST AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0599705,
+        "lng": -94.1629542
+    },
+    {
+        "id": 606,
+        "address": "2575 S COBALT AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0349037,
+        "lng": -94.1202388
+    },
+    {
+        "id": 607,
+        "address": "1049 S WASHINGTON AVE FAYETTEVILLE AR 72701",
+        "lat": 36.0523157,
+        "lng": -94.15743499999999
+    },
+    {
+        "id": 608,
+        "address": "1661 W HOTZ DR  FAYETTEVILLE AR 72701",
+        "lat": 36.0649042,
+        "lng": -94.1845168
+    },
+    {
+        "id": 609,
+        "address": "1771 N OAKLAND AVE FAYETTEVILLE AR 72703",
+        "lat": 36.0861005,
+        "lng": -94.1736344
+    },
+    {
+        "id": 610,
+        "address": "2717 N GULLEY GROVE CIR Fayetteville AR 72703",
+        "lat": 36.100099,
+        "lng": -94.13003499999999
+    },
+    {
+        "id": 611,
+        "address": "865 S ONE MILE RD FAYETTEVILLE AR 72704",
+        "lat": 36.054164,
+        "lng": -94.203777
+    }
+]
