@@ -22,7 +22,7 @@ import {
     TableRow,
 } from "../ui/table"
 import React from "react";
-import type { Plan } from "./plansColumns";
+import { Plan } from "~/types/plan";
 
 interface DataTableProps {
     columns: ColumnDef<Plan>[]
