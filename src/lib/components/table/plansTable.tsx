@@ -20,9 +20,8 @@ import {
     TableHeader,
     TableRow,
 } from "../ui/table"
-import React, { Dispatch, SetStateAction } from "react";
+import React from "react";
 import { Plan } from "~/types/plan";
-import { Crosshair2Icon } from "@radix-ui/react-icons";
 
 interface DataTableProps {
     columns: ColumnDef<Plan>[]
