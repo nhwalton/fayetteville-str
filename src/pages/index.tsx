@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { Dialog, Listbox, Transition } from "@headlessui/react";
-import { CaretSortIcon, CheckIcon, MixIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import { Listbox, Transition } from "@headlessui/react";
+import { CaretSortIcon, CheckIcon, Crosshair2Icon, PaperPlaneIcon } from "@radix-ui/react-icons";
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import type { Plan } from "~/types/plan";
@@ -73,6 +73,8 @@ export default function Home() {
     const [selectedTypes, setSelectedTypes] = useState([types[1], types[2]])
     const [validStatuses, setValidStatuses] = useState([statuses[4], statuses[5], statuses[6], statuses[7], statuses[8], statuses[10], statuses[11], statuses[20], statuses[24]])
 
+    const [locationAccess, setLocationAccess] = useState<boolean>(true)
+
     const getPlans = async () => {
         setHome(false)
         setIsLoading(true)
@@ -123,9 +125,46 @@ export default function Home() {
         setPlans(allPlans)
     }
 
+    const findUser = () => {
+        if (() => navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position: GeolocationPosition) => {
+                    const pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                    };
+                    setCenter(pos)
+                },
+                () => {
+                    setLocationAccess(false)
+                }
+                , { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
+            );
+        } else {
+            alert("Geolocation is not supported by this browser.")
+        }
+    }
+
     useEffect(() => {
         setIsLoading(false)
     }, [plans])
+
+    useEffect(() => {
+        console.log("checking location access")
+        let access = null;
+        void (async () => {
+            await navigator.permissions.query({ name: 'geolocation' }).then((result) => result.state).then((state) => access = state).catch((error) => console.log(error));
+            if (access === 'granted' || access === 'prompt') {
+                console.log("access", access)
+                setLocationAccess(true)
+            } else {
+                console.log("access", access)
+                setLocationAccess(false)
+            }
+        })()
+    })
+
+    console.log("location access", locationAccess)
 
     function classNames(...classes: unknown[]) {
         return classes.filter(Boolean).join(' ')
@@ -322,13 +361,26 @@ export default function Home() {
                                     </Transition>
                                 </Listbox>
                             </div>
-                            <div className="h-full bg-rose-500 rounded-xl w-full md:w-[10rem] items-center">
-                                <button
-                                    className="flex flex-row w-full gap-2 items-center bg-white/20 bg-rose-500 hover:bg-white/20 text-white rounded-xl px-4 py-2 justify-center"
-                                    onClick={() => void getPlans()}
-                                >
-                                    Go <PaperPlaneIcon />
-                                </button>
+                            <div className="flex flex-row gap-4 w-full md:w-auto">
+                                <div className="h-full bg-rose-500 rounded-xl w-full md:w-[10rem] items-center">
+                                    <button
+                                        className="flex flex-row w-full gap-2 items-center hover:bg-black/10 text-white rounded-xl px-4 py-2 justify-center"
+                                        onClick={() => void getPlans()}
+                                    >
+                                        Go <PaperPlaneIcon />
+                                    </button>
+                                </div>
+                                {(!isLoading && plans.length > 0) &&
+                                    <div className="w-full md:w-[10rem] bg-blue-500 rounded-xl">
+                                        <button
+                                            className="flex flex-row w-full gap-2 items-center hover:bg-black/10 disabled:bg-slate-500 disabled:text-slate-400 text-white rounded-xl px-4 py-2 justify-center"
+                                            disabled={!locationAccess}
+                                            onClick={() => void findUser()}
+                                        >
+                                            Find Me <Crosshair2Icon />
+                                        </button>
+                                    </div>
+                                }
                             </div>
                         </div>
                     </div>

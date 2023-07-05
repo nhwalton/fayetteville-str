@@ -1,7 +1,6 @@
-import { faBed, faFlag, faHouse, faLocationDot, faNewspaper } from "@fortawesome/free-solid-svg-icons";
-import { Dialog } from "@headlessui/react";
-import { GoogleMap, MarkerClusterer, useLoadScript, MarkerF, InfoWindow } from "@react-google-maps/api";
-import { use, useEffect, useState } from "react";
+import { faBed, faHouse, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { GoogleMap, InfoWindow, MarkerClusterer, MarkerF, useLoadScript } from "@react-google-maps/api";
+import { useState } from "react";
 import { Plan } from "~/types/plan";
 
 const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLiteral }> = ({ markers, center }) => {
@@ -22,7 +21,7 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
         lng: -94.157426
     }
 
-    const zoom = center.lat == 36.062579 && center.lng == -94.157426 ? 13 : 17
+    let zoom = center.lat == 36.062579 && center.lng == -94.157426 ? 13 : 17
 
     const options = {
         imagePath:
