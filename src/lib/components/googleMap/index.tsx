@@ -21,7 +21,7 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
         lng: -94.157426
     }
 
-    let zoom = center.lat == 36.062579 && center.lng == -94.157426 ? 13 : 17
+    const zoom = center.lat == 36.062579 && center.lng == -94.157426 ? 13 : 17
 
     const options = {
         imagePath:
