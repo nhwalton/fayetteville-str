@@ -42,7 +42,7 @@ export function DataTable({
     })
 
     return (
-        <div className="rounded-xl border border-black/40 bg-black/60 text-purple-50 px-8 pt-4 backdrop-blur">
+        <div className="rounded-xl border border-black/40 bg-black/60 text-purple-50 px-8 pt-4 backdrop-blur text-xs md:text-md">
             <Table>
                 <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
@@ -73,7 +73,7 @@ export function DataTable({
                                     if (cell.column.id == "address") {
                                         return (
                                             <TableCell className="text-md" key={cell.id}>
-                                                <button className="flex flex-row gap-2 items-center underline" onClick={() => setCenter({ lat: Number(row.original.lat), lng: Number(row.original.lng) })}>
+                                                <button className="flex flex-row gap-2 items-center underline break-words overflow-hidden" onClick={() => setCenter({ lat: Number(row.original.lat), lng: Number(row.original.lng) })}>
                                                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                                                 </button>
                                             </TableCell>

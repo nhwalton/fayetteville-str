@@ -139,15 +139,15 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="flex min-h-screen flex-col items-center justify-start bg-[linear-gradient(to_bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('/background.jpg')] bg-fixed bg-black/10 bg-cover bg-center">
-                <div className="container flex flex-col items-center justify-center gap-8 px-4 py-16">
-                    <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+                <div className="container flex flex-col items-center justify-center gap-8 px-4 py-8 md:py-16">
+                    <h1 className="font-extrabold tracking-tight text-white text-4xl md:text-[5rem] sm:pb-5">
                         Fayetteville <span className="text-[hsl(280,100%,70%)] text-rose-500">STRs</span>
                     </h1>
-                    <div className="flex flex-col flex-grow h-full">
-                        <div className="flex flex-row gap-4 items-end justify-center">
-                            <div className="relative">
+                    <div className="flex flex-col flex-grow h-full w-full md:w-3/4 items-start md:items-center">
+                        <div className="flex flex-col md:flex-row gap-4 items-start md:items-end justify-center w-full">
+                            <div className="relative w-full md:w-[10rem]">
                                 <Listbox value={timeframe} onChange={setTimeframe}>
-                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 w-[10rem] text-white rounded-xl px-4 py-2 flex flex-row items-center justify-between gap-2">
+                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 w-full text-white rounded-xl px-4 py-2 flex flex-row items-center justify-between gap-2">
                                         {timeframe.name}
                                         <CaretSortIcon
                                             className="h-5 w-5 text-gray-400"
@@ -193,10 +193,14 @@ export default function Home() {
                                     </Transition>
                                 </Listbox>
                             </div>
-                            <div className="relative">
+                            <div className="relative w-full md:w-[12rem]">
                                 <Listbox value={selectedTypes} onChange={setSelectedTypes} multiple>
-                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 text-white rounded-xl px-4 py-2 flex flex-row items-center justify-center gap-2">
+                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 w-full text-white rounded-xl px-4 py-2 flex flex-row items-center justify-between gap-2">
                                         Permit Types {selectedTypes.length > 0 ? `(${selectedTypes.length})` : null}
+                                        <CaretSortIcon
+                                            className="h-5 w-5 text-gray-400"
+                                            aria-hidden="true"
+                                        />
                                     </Listbox.Button>
                                     <Transition
                                         as={Fragment}
@@ -237,10 +241,14 @@ export default function Home() {
                                     </Transition>
                                 </Listbox>
                             </div>
-                            <div className="relative">
+                            <div className="relative w-full md:w-[10rem]">
                                 <Listbox value={validStatuses} onChange={setValidStatuses} multiple>
-                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 text-white rounded-xl px-4 py-2 flex flex-row items-center justify-center gap-2">
+                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 w-full text-white rounded-xl px-4 py-2 flex flex-row items-center justify-between gap-2">
                                         Statuses {validStatuses.length > 0 ? `(${validStatuses.length})` : null}
+                                        <CaretSortIcon
+                                            className="h-5 w-5 text-gray-400"
+                                            aria-hidden="true"
+                                        />
                                     </Listbox.Button>
                                     <Transition
                                         as={Fragment}
@@ -314,9 +322,9 @@ export default function Home() {
                                     </Transition>
                                 </Listbox>
                             </div>
-                            <div className="h-full bg-rose-500 rounded-xl">
+                            <div className="h-full bg-rose-500 rounded-xl w-full md:w-[10rem] items-center">
                                 <button
-                                    className="flex flex-row gap-2 items-center bg-white/20 bg-rose-500 hover:bg-white/20 text-white rounded-xl px-4 py-2"
+                                    className="flex flex-row w-full gap-2 items-center bg-white/20 bg-rose-500 hover:bg-white/20 text-white rounded-xl px-4 py-2 justify-center"
                                     onClick={() => void getPlans()}
                                 >
                                     Go <PaperPlaneIcon />
@@ -325,23 +333,23 @@ export default function Home() {
                         </div>
                     </div>
                     {isLoading && home && plans.length < 1 ? <div className="w-full h-12 flex items-center justify-center"><LoadingSpinner size={48} /></div> : ""}
-                    <div className="container mx-auto py-2 text-white relative">
+                    <div className="w-full mx-auto py-2 text-white relative">
                         {home &&
-                            <div className="flex flex-col gap-4 w-1/2 mx-auto rounded-xl text-white">
+                            <div className="flex flex-col gap-4 w-full md:w-1/2 mx-auto rounded-xl text-white">
                                 <span>To begin exploring short-term rental licenses and conditional use permits, click Go.</span>
                                 <span>By default, the search parameters are set to show all active short-term rental licenses.</span>
                                 <span>You may change this by toggling Conditional Use Permits under Permit Types to view pending CUPs.</span>
                                 <span>For a deeper dive, you may use the Statuses dropdown to view all possible permit/license statuses.</span>
                             </div>}
                         {!home && !isLoading && plans.length === 0 &&
-                            <div className="rounded-xl h-[800px] w-full bg-black/50 flex items-center justify-center ring-black/80 text-center">
+                            <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-black/50 flex items-center justify-center ring-black/80 text-center">
                                 No results found. <br /> Consider expanding your search options.
                             </div>
                         }
-                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ? <div className="absolute top-0 right-0 z-[999999] h-[800px] w-full py-2 px-8"><div className="rounded-xl h-[800px] w-full bg-black/40 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
+                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ? <div className="absolute top-0 right-0 z-[999999] h-[400px] md:h-[800px] w-full py-2"><div className="rounded-xl h-[400px] md:h-[800px] w-full bg-black/40 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
                         {plans && plans.length > 0 ? <GoogleMapComponent markers={plans} center={center} /> : ""}
                     </div>
-                    <div className="container mx-auto py-2 text-white rounded-xl">
+                    <div className="hidden md:visible w-full mx-auto py-2 text-white rounded-xl">
                         {plansColumns && plans && plans.length > 0 ? <DataTable columns={plansColumns} data={plans} setCenter={setCenter} /> : ""}
                     </div>
                 </div>
