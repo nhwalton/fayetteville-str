@@ -101,11 +101,12 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
                                                     >
                                                         <div className="flex flex-col gap-2 text-slate-800">
                                                             <div className="grid grid-cols-[auto_1fr]">
-                                                                <p className="col-span-2 font-medium mb-1">{marker.address}</p>
+                                                                <p className="col-span-2 font-medium mb-2">{marker.address}</p>
                                                                 <p className="font-medium me-2">Permit Type:</p><p>{marker.type}</p>
                                                                 <p className="font-medium me-2">Applied:</p><p>{marker.date}</p>
                                                                 <p className="font-medium me-2">Status:</p><p>{marker.status}</p>
                                                                 <p className="font-medium me-2">Permit Details:</p><a className="underline" href={marker.link} target="_blank" rel="noreferrer">Link</a>
+                                                                <a className="me-2 font-normal text-[#1a73e8] hover:underline mt-1" href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(marker.address)}`} target="_blank" rel="noreferrer">View on Google Maps</a>
                                                             </div>
                                                         </div>
                                                     </InfoWindow>
@@ -118,7 +119,7 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
                         )}
                     </MarkerClusterer>
                 </GoogleMap>
-            </div>
+            </div >
         )
     }
 
