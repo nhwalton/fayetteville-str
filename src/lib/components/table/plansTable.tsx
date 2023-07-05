@@ -20,7 +20,7 @@ import {
     TableHeader,
     TableRow,
 } from "../ui/table"
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { Plan } from "~/types/plan";
 
 interface DataTableProps {
