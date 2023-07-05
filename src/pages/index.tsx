@@ -342,14 +342,14 @@ export default function Home() {
                                 <span>For a deeper dive, you may use the Statuses dropdown to view all possible permit/license statuses.</span>
                             </div>}
                         {!home && !isLoading && plans.length === 0 &&
-                            <div className="rounded-xl h-[800px] w-full bg-black/50 flex items-center justify-center ring-black/80 text-center">
+                            <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-black/50 flex items-center justify-center ring-black/80 text-center">
                                 No results found. <br /> Consider expanding your search options.
                             </div>
                         }
-                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ? <div className="absolute top-0 right-0 z-[999999] h-[800px] w-full py-2"><div className="rounded-xl h-[800px] w-full bg-black/40 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
+                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ? <div className="absolute top-0 right-0 z-[999999] h-[400px] md:h-[800px] w-full py-2"><div className="rounded-xl h-[400px] md:h-[800px] w-full bg-black/40 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
                         {plans && plans.length > 0 ? <GoogleMapComponent markers={plans} center={center} /> : ""}
                     </div>
-                    <div className="w-full mx-auto py-2 text-white rounded-xl">
+                    <div className="hidden md:visible w-full mx-auto py-2 text-white rounded-xl">
                         {plansColumns && plans && plans.length > 0 ? <DataTable columns={plansColumns} data={plans} setCenter={setCenter} /> : ""}
                     </div>
                 </div>

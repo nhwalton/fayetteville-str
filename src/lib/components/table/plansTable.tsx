@@ -42,7 +42,7 @@ export function DataTable({
     })
 
     return (
-        <div className="hidden md:visible rounded-xl border border-black/40 bg-black/60 text-purple-50 px-8 pt-4 backdrop-blur text-xs md:text-md">
+        <div className="rounded-xl border border-black/40 bg-black/60 text-purple-50 px-8 pt-4 backdrop-blur text-xs md:text-md">
             <Table>
                 <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (

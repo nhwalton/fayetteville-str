@@ -37,7 +37,7 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
 
     const renderMap = () => {
         return (
-            <div className="rounded-xl overflow-hidden relative">
+            <div className="rounded-xl overflow-hidden relative h-[400px] md:h-[800px]">
                 <GoogleMap
                     mapContainerStyle={containerStyle}
                     center={useCenter}
