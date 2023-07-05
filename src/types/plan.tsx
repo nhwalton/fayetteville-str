@@ -6,4 +6,5 @@ export type Plan = {
     type: string
     lat: number
     lng: number
+    link: string
 }

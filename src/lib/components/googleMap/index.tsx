@@ -1,4 +1,4 @@
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faBed, faFlag, faHouse, faLocationDot, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { Dialog } from "@headlessui/react";
 import { GoogleMap, MarkerClusterer, useLoadScript, MarkerF, InfoWindow } from "@react-google-maps/api";
 import { use, useEffect, useState } from "react";
@@ -27,6 +27,12 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
     const options = {
         imagePath:
             '/clusterer/m',
+        minimumClusterSize: 5,
+        averageCenter: true,
+    }
+    const [infoOpen, setInfoOpen] = useState<unknown | null>(null);
+    const handleToggle = (id: string) => {
+        setInfoOpen(id)
     }
 
     const renderMap = () => {
@@ -36,6 +42,7 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
                     mapContainerStyle={containerStyle}
                     center={useCenter}
                     zoom={zoom}
+                    onClick={() => setInfoOpen(null)}
                 >
                     <MarkerClusterer
                         options={options}
@@ -46,24 +53,64 @@ const GoogleMapComponent: React.FC<{ markers: Plan[], center: google.maps.LatLng
                                     if (marker.lat && marker.lng && typeof marker.lat == 'number' && typeof marker.lng == 'number') {
                                         const useLat = marker.type === "Conditional Use Permit - General" ? marker.lat + 0.000025 : marker.lat - 0.000025
                                         const useLng = marker.type === "Conditional Use Permit - General" ? marker.lng + 0.000025 : marker.lng - 0.000025
+                                        let fillColor = "#c026d3"
+                                        let strokeColor = "#c026d3"
+                                        let icon = faLocationDot
+                                        switch (marker.type) {
+                                            case "Conditional Use Permit - General":
+                                                fillColor = "#60a5fa"
+                                                strokeColor = "#2563eb"
+                                                icon = faLocationDot
+                                                break;
+                                            case "Short-Term Rental Type 1":
+                                                fillColor = "#fbbf24"
+                                                strokeColor = "#d97706"
+                                                icon = faBed
+                                                break;
+                                            case "Short-Term Rental Type 2":
+                                                fillColor = "#fb7185"
+                                                strokeColor = "#e11d48"
+                                                icon = faHouse
+                                                break;
+                                            default:
+                                                break;
+                                        }
                                         return (
                                             <MarkerF
                                                 key={marker.id}
                                                 position={{ lat: useLat, lng: useLng }}
                                                 clusterer={clusterer}
+                                                onClick={() => handleToggle(marker.id)}
                                                 icon={{
-                                                    path: faLocationDot.icon[4] as string,
-                                                    fillColor: marker.type == "Conditional Use Permit - General" ? "#c026d3" : "#e11d48",
+                                                    path: icon.icon[4] as string,
+                                                    fillColor: fillColor,
                                                     fillOpacity: 1,
                                                     anchor: new google.maps.Point(
-                                                        faLocationDot.icon[0] / 2, // width
-                                                        faLocationDot.icon[1] // height
+                                                        icon.icon[0] / 2, // width
+                                                        icon.icon[1] // height
                                                     ),
                                                     strokeWeight: 1,
-                                                    strokeColor: "#ffffff",
-                                                    scale: 0.05,
+                                                    strokeColor: strokeColor,
+                                                    scale: 0.03,
                                                 }}
-                                            />
+                                            >
+                                                {infoOpen === marker.id &&
+                                                    <InfoWindow
+                                                        position={{ lat: marker.lat, lng: marker.lng }}
+                                                        onCloseClick={() => setInfoOpen(null)}
+                                                    >
+                                                        <div className="flex flex-col gap-2 text-slate-800">
+                                                            <div className="grid grid-cols-[auto_1fr]">
+                                                                <p className="col-span-2 font-medium mb-1">{marker.address}</p>
+                                                                <p className="font-medium me-2">Permit Type:</p><p>{marker.type}</p>
+                                                                <p className="font-medium me-2">Applied:</p><p>{marker.date}</p>
+                                                                <p className="font-medium me-2">Status:</p><p>{marker.status}</p>
+                                                                <p className="font-medium me-2">Permit Details:</p><a className="underline" href={marker.link} target="_blank" rel="noreferrer">Link</a>
+                                                            </div>
+                                                        </div>
+                                                    </InfoWindow>
+                                                }
+                                            </MarkerF>
                                         )
                                     }
                                 })}

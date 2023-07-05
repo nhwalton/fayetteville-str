@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -88,7 +89,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         for (let i = 0; i < plans.length; i++) {
             const plan = plans[i]
             const record = {} as Plan
-            if (plan && plan.AddressDisplay && !(plan.CaseStatus === "Approved" || plan.CaseStatus === "Denied" || plan.CaseStatus === "Withdrawn" || plan.CaseStatus === "Void")) {
+            if (plan && plan.AddressDisplay) {
                 let address = addresses.find(a => a.address === plan.AddressDisplay)
                 if (!address) {
                     address = await addressesRepo.create(plan.AddressDisplay)
@@ -103,6 +104,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 record.type = plan.CaseType
                 record.lat = address.lat
                 record.lng = address.lng
+                record.link = `https://egov.fayetteville-ar.gov/EnerGov_Prod/SelfService#/${plan.CaseType === 'Conditional Use Permit - General' ? "plan" : "businessLicense"}/${plan.CaseId}`
 
                 results.push(record)
             }
