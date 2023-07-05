@@ -227,7 +227,7 @@
         "EnableDescriptionSearchForBLicense": false,
         "EnableDescriptionSearchForPLicense": false,
         "PageNumber": 1,
-        "PageSize": 100,
+        "PageSize": 1000,
         "SortBy": "ApplyDate",
         "SortAscending": false
     },

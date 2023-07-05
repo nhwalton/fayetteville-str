@@ -31,10 +31,12 @@ async function create(address: string) {
     const geocodeApiKey = process.env.NEXT_PUBLIC_GOOGLE_GEOCODE_API_KEY as string
     console.log("creating entry for address: ", newAddress.address)
     let geocode = {} as GeoRoot;
+    const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${geocodeApiKey}`
     try {
-        const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${geocodeApiKey}`)
+        const response = await fetch(geocodeUrl)
         geocode = await response.json() as GeoRoot;
     } catch (error) {
+        console.log("error fetching geocode: ", geocodeUrl)
         console.log("error: ", error)
     }
 

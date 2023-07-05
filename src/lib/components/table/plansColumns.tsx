@@ -23,15 +23,15 @@ export const plansColumns: ColumnDef<Plan>[] = [
     },
     {
         accessorKey: "id",
-        header: "Link",
+        header: "Permit",
         cell: ({ row }) => {
-            const baseUrl = row.getValue("type") == "Conditional User Permit"
+            const baseUrl = row.getValue("type") == "Conditional Use Permit - General"
                 ? "https://egov.fayetteville-ar.gov/EnerGov_Prod/SelfService#/plan/"
                 : "https://egov.fayetteville-ar.gov/EnerGov_Prod/SelfService#/businessLicense/"
             const id = row.getValue<string>("id")
             const url = `${baseUrl}${id}`
             return (
-                <a href={url} target="_blank" rel="noreferrer">
+                <a className="underline" href={url} target="_blank" rel="noreferrer">
                     Link
                 </a>
             );

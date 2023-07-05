@@ -10,7 +10,6 @@ import {
     flexRender,
     getCoreRowModel,
     useReactTable,
-    getPaginationRowModel,
 } from "@tanstack/react-table";
 
 import {
@@ -21,17 +20,20 @@ import {
     TableHeader,
     TableRow,
 } from "../ui/table"
-import React from "react";
-import type { Plan } from "./plansColumns";
+import React, { Dispatch, SetStateAction } from "react";
+import { Plan } from "~/types/plan";
+import { Crosshair2Icon } from "@radix-ui/react-icons";
 
 interface DataTableProps {
     columns: ColumnDef<Plan>[]
     data: Plan[]
+    setCenter: Dispatch<SetStateAction<google.maps.LatLngLiteral>>
 }
 
 export function DataTable({
     columns,
     data,
+    setCenter,
 }: DataTableProps) {
     const table = useReactTable({
         data,
@@ -41,7 +43,7 @@ export function DataTable({
     })
 
     return (
-        <div className="rounded-md border bg-[#15162c] text-purple-100 px-8 pt-4">
+        <div className="rounded-xl border border-black/40 bg-black/60 text-purple-50 px-8 pt-4 backdrop-blur">
             <Table>
                 <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
@@ -68,11 +70,23 @@ export function DataTable({
                                 key={row.id}
                                 data-state={row.getIsSelected() && "selected"}
                             >
-                                {row.getVisibleCells().map((cell) => (
-                                    <TableCell key={cell.id}>
-                                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                                    </TableCell>
-                                ))}
+                                {row.getVisibleCells().map((cell) => {
+                                    if (cell.column.id == "address") {
+                                        return (
+                                            <TableCell className="text-md" key={cell.id}>
+                                                <button className="flex flex-row gap-2 items-center underline" onClick={() => setCenter({ lat: Number(row.original.lat), lng: Number(row.original.lng) })}>
+                                                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                                                </button>
+                                            </TableCell>
+                                        )
+                                    } else {
+                                        return (
+                                            <TableCell key={cell.id}>
+                                                {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                                            </TableCell>
+                                        )
+                                    }
+                                })}
                             </TableRow>
                         ))
                     ) : (
