@@ -12,9 +12,9 @@ import { plansColumns } from "../lib/components/table/plansColumns";
 import { DataTable } from "../lib/components/table/plansTable";
 
 const types = [
-    { id: 1, name: 'Pending Conditional Use Permits', value: 'cup' },
-    { id: 2, name: 'Active STR Licenses - Type 1', value: 'str1' },
-    { id: 3, name: 'Active STR Licenses - Type 2', value: 'str2' },
+    { id: 1, name: 'Conditional Use Permits', value: 'cup' },
+    { id: 2, name: 'STR Licenses - Type 1', value: 'str1' },
+    { id: 3, name: 'STR Licenses - Type 2', value: 'str2' },
 ]
 
 interface Timeframe {
@@ -30,16 +30,51 @@ const timeframes = [
     { id: 4, name: 'All Time', value: 'at' },
 ]
 
+const statuses = [
+    { id: 1, type: "cup", name: "Approval Expired" },
+    { id: 2, type: "cup", name: "Approved" },
+    { id: 3, type: "cup", name: "Conditional Approval" },
+    { id: 4, type: "cup", name: "Denied" },
+    { id: 5, type: "cup", name: "Fees Due" },
+    { id: 6, type: "cup", name: "Fees Paid" },
+    { id: 7, type: "cup", name: "In Appeal Period" },
+    { id: 8, type: "cup", name: "In Review" },
+    { id: 9, type: "cup", name: "On Hold" },
+    { id: 10, type: "cup", name: "Review Expired" },
+    { id: 11, type: "cup", name: "Submitted" },
+    { id: 12, type: "cup", name: "Submitted - Online" },
+    { id: 13, type: "cup", name: "Tabled" },
+    { id: 14, type: "cup", name: "Void" },
+    { id: 15, type: "cup", name: "Withdrawn" },
+    { id: 16, type: "str", name: "Denied" },
+    { id: 17, type: "str", name: "Expired" },
+    { id: 18, type: "str", name: "Fees Due" },
+    { id: 19, type: "str", name: "Fees Paid" },
+    { id: 20, type: "str", name: "In Review" },
+    { id: 21, type: "str", name: "Issued" },
+    { id: 22, type: "str", name: "Non Renewable" },
+    { id: 23, type: "str", name: "On Hold" },
+    { id: 24, type: "str", name: "Hold" },
+    { id: 25, type: "str", name: "Renewed" },
+    { id: 26, type: "str", name: "Revoked" },
+    { id: 27, type: "str", name: "Submitted" },
+    { id: 28, type: "str", name: "Submitted - Online" },
+    { id: 29, type: "str", name: "Void" },
+]
+
 export default function Home() {
 
     const [plans, setPlans] = useState<Plan[]>([])
-    const [timeframe, setTimeframe] = useState<Timeframe>(timeframes[0] as Timeframe)
+    const [timeframe, setTimeframe] = useState<Timeframe>(timeframes[3] as Timeframe)
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [center, setCenter] = useState<google.maps.LatLngLiteral>({ lat: 36.062579, lng: -94.157426 })
+    const [home, setHome] = useState<boolean>(true)
 
-    const [selectedTypes, setSelectedTypes] = useState(types)
+    const [selectedTypes, setSelectedTypes] = useState([types[1], types[2]])
+    const [validStatuses, setValidStatuses] = useState([statuses[4], statuses[5], statuses[6], statuses[7], statuses[8], statuses[10], statuses[11], statuses[20], statuses[24]])
 
     const getPlans = async () => {
+        setHome(false)
         setIsLoading(true)
         const offset = new Date().getTimezoneOffset()
         const startDate = new Date(Date.now() - (offset * 60 * 1000))
@@ -73,10 +108,17 @@ export default function Home() {
 
         const allPlans = [] as Plan[]
         for (const callType of selectedTypes) {
-            const callValue = callType.value
+            const callValue = callType?.value as string
             const plansResponse = await fetch(`/api/plans/?startDate=${start}&endDate=${end}&type=${callValue}`)
             const plans = await plansResponse.json() as Plan[];
-            allPlans.push(...plans)
+            for (const plan of plans) {
+                const statusType = callValue === 'cup' ? 'cup' : 'str'
+                const validStatus = validStatuses.find(status => status && status.type === statusType && status.name === plan.status)
+                if (validStatus) {
+                    allPlans.push(plan)
+                }
+            }
+            // allPlans.push(...plans)
         }
         setPlans(allPlans)
     }
@@ -154,7 +196,7 @@ export default function Home() {
                             <div className="relative">
                                 <Listbox value={selectedTypes} onChange={setSelectedTypes} multiple>
                                     <Listbox.Button className="group bg-white/10 hover:bg-white/20 text-white rounded-xl px-4 py-2 flex flex-row items-center justify-center gap-2">
-                                        Filter
+                                        Permit Types {selectedTypes.length > 0 ? `(${selectedTypes.length})` : null}
                                     </Listbox.Button>
                                     <Transition
                                         as={Fragment}
@@ -195,6 +237,83 @@ export default function Home() {
                                     </Transition>
                                 </Listbox>
                             </div>
+                            <div className="relative">
+                                <Listbox value={validStatuses} onChange={setValidStatuses} multiple>
+                                    <Listbox.Button className="group bg-white/10 hover:bg-white/20 text-white rounded-xl px-4 py-2 flex flex-row items-center justify-center gap-2">
+                                        Statuses {validStatuses.length > 0 ? `(${validStatuses.length})` : null}
+                                    </Listbox.Button>
+                                    <Transition
+                                        as={Fragment}
+                                        leave="transition ease-in-out duration-300"
+                                        leaveFrom="opacity-100"
+                                        leaveTo="opacity-0"
+                                    >
+                                        <Listbox.Options className="z-[999999] absolute mt-4 rounded-xl max-h-60 overflow-auto bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                                            <div className="ps-2 py-2 font-medium text-neutral-800">Conditional Use Permits</div>
+                                            {statuses.map((status) => (
+                                                status.type === "cup" &&
+                                                <Listbox.Option
+                                                    key={status.id}
+                                                    className={({ active }) =>
+                                                        `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-rose-100 text-rose-900' : 'text-gray-900'
+                                                        }`
+                                                    }
+                                                    value={status}
+                                                >
+                                                    {({ selected }) => {
+                                                        return (
+                                                            <>
+                                                                <span
+                                                                    className={`block truncate ${selected ? 'font-medium' : 'font-normal'
+                                                                        }`}
+                                                                >
+                                                                    {status.name}
+                                                                </span>
+                                                                {selected ? (
+                                                                    <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-rose-600">
+                                                                        <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                                    </span>
+                                                                ) : null}
+                                                            </>
+                                                        )
+                                                    }}
+                                                </Listbox.Option>
+                                            ))}
+                                            <hr className="mt-2" />
+                                            <div className="ps-2 py-2 font-medium text-neutral-800">STR Licenses</div>
+                                            {statuses.map((status) => (
+                                                status.type === "str" &&
+                                                <Listbox.Option
+                                                    key={status.id}
+                                                    className={({ active }) =>
+                                                        `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-rose-100 text-rose-900' : 'text-gray-900'
+                                                        }`
+                                                    }
+                                                    value={status}
+                                                >
+                                                    {({ selected }) => {
+                                                        return (
+                                                            <>
+                                                                <span
+                                                                    className={`block truncate ${selected ? 'font-medium' : 'font-normal'
+                                                                        }`}
+                                                                >
+                                                                    {status.name}
+                                                                </span>
+                                                                {selected ? (
+                                                                    <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-rose-600">
+                                                                        <CheckIcon className="h-5 w-5" aria-hidden="true" />
+                                                                    </span>
+                                                                ) : null}
+                                                            </>
+                                                        )
+                                                    }}
+                                                </Listbox.Option>
+                                            ))}
+                                        </Listbox.Options>
+                                    </Transition>
+                                </Listbox>
+                            </div>
                             <div className="h-full bg-rose-500 rounded-xl">
                                 <button
                                     className="flex flex-row gap-2 items-center bg-white/20 bg-rose-500 hover:bg-white/20 text-white rounded-xl px-4 py-2"
@@ -205,9 +324,21 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    {isLoading && plans.length < 1 ? <div className="w-full h-12 flex items-center justify-center"><LoadingSpinner size={48} /></div> : ""}
+                    {isLoading && home && plans.length < 1 ? <div className="w-full h-12 flex items-center justify-center"><LoadingSpinner size={48} /></div> : ""}
                     <div className="container mx-auto py-2 text-white relative">
-                        {isLoading && plans.length > 0 ? <div className="absolute top-0 right-0 z-[999999] h-[800px] w-full py-2 px-8"><div className="rounded-xl h-[800px] w-full bg-black/80 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
+                        {home &&
+                            <div className="flex flex-col gap-4 w-1/2 mx-auto rounded-xl text-white">
+                                <span>To begin exploring short-term rental licenses and conditional use permits, click Go.</span>
+                                <span>By default, the search parameters are set to show all active short-term rental licenses.</span>
+                                <span>You may change this by toggling Conditional Use Permits under Permit Types to view pending CUPs.</span>
+                                <span>For a deeper dive, you may use the Statuses dropdown to view all possible permit/license statuses.</span>
+                            </div>}
+                        {!home && !isLoading && plans.length === 0 &&
+                            <div className="rounded-xl h-[800px] w-full bg-black/50 flex items-center justify-center ring-black/80 text-center">
+                                No results found. <br /> Consider expanding your search options.
+                            </div>
+                        }
+                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ? <div className="absolute top-0 right-0 z-[999999] h-[800px] w-full py-2 px-8"><div className="rounded-xl h-[800px] w-full bg-black/40 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
                         {plans && plans.length > 0 ? <GoogleMapComponent markers={plans} center={center} /> : ""}
                     </div>
                     <div className="container mx-auto py-2 text-white rounded-xl">
