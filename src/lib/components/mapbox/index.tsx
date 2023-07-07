@@ -2,6 +2,7 @@
 import mapboxgl, { type GeoJSONSource, type GeoJSONSourceRaw } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React, { useEffect, useRef, useState } from "react";
+import ReactDOM from "react-dom";
 import { type Plan } from "~/types/plan";
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoibmh3YWx0b24iLCJhIjoiY2xqcmFydmVnMGRjZjNzbzY4MzN1MjdhYyJ9.IbxdyFKrDAxWo0cbBu_N_A';
@@ -13,6 +14,22 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
     const [lat, setLat] = useState(36.062579);
     const [zoom, setZoom] = useState(13);
     const [mapLoad, setMapLoad] = useState(false);
+
+    const Popup = (props: { date: string, address: string, status: string, type: string, url: string }) => {
+        const { date, address, status, type, url } = props
+        return (
+            <div className="flex flex-col gap-2 text-slate-800 w-[300px]">
+                <div className="grid grid-cols-[auto_1fr]">
+                    <p className="col-span-2 font-semibold mb-2 max-w-[200px]">{address.substring(0, address.toLocaleLowerCase().indexOf(' fayetteville'))}<br />{address.substring(address.toLocaleLowerCase().indexOf('fayetteville'), address.length)}</p>
+                    <p className="font-semibold me-2">Permit Type:</p><p>{type}</p>
+                    <p className="font-semibold me-2">Applied:</p><p>{date}</p>
+                    <p className="font-semibold me-2">Status:</p><p>{status}</p>
+                    <p className="font-semibold me-2">Permit Details:</p><a className="underline" href={url} target="_blank" rel="noreferrer">Link</a>
+                    <a className="me-2 font-normal text-[#1a73e8] hover:underline mt-1" href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(address)}`} target="_blank" rel="noreferrer">View on Google Maps</a>
+                </div >
+            </div >
+        )
+    }
 
     useEffect(() => {
         if (map.current) return;
@@ -146,12 +163,6 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
                 'text-size': 12
             }
         });
-        map.current.loadImage(
-            '/icons/house-solid.png',
-            (error, image) => {
-                if (error) throw error;
-                image && map.current?.addImage('cat', image, { sdf: true });
-            })
         map.current.addLayer({
             id: 'unclustered-point',
             type: 'symbol',
@@ -230,18 +241,16 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
             if (e.features) {
                 const coordinates = e.features && (e.features[0]?.geometry as GeoJSON.Point).coordinates.slice() as GeoJSON.Position as mapboxgl.LngLatLike;
                 const { date, address, status, type, link } = e.features[0]?.properties as Plan;
-                new mapboxgl.Popup()
+                const popupNode = document.createElement('div');
+                popupNode.style.cssText = 'padding-left:0.5rem;'
+                ReactDOM.render(
+                    <Popup date={date} address={address} status={status} type={type} url={link} />,
+                    popupNode
+                )
+                new mapboxgl.Popup({ maxWidth: "300px" })
                     .setLngLat(coordinates)
-                    .setHTML(
-                        `<div class="flex flex-col">
-                            <div class="flex flex-row justify-between">
-                                <div class="text-lg font-bold">${date}</div>
-                                <div class="text-lg font-bold">${type}</div>
-                            </div>
-                            <div class="text-sm">${address}</div>
-                            <div class="text-sm">${status}</div>
-                            <div class="text-sm"><a href="${link}" target="_blank">View Plan</a></div>
-                        </div>`
+                    .setDOMContent(
+                        popupNode
                     )
                     .addTo(map.current as mapboxgl.Map);
             }
@@ -259,14 +268,15 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
     }, [markers])
 
     return (
-        <>
+
+        <div className="rounded-xl overflow-hidden relative h-[400px] md:h-[800px] w-full text-black">
             <div className="top-0 left-0 w-full h-full absolute" ref={mapContainer} />
-            {/* {(markers.length > 0) &&
-                < div className="bg-rose-500 text-white py-2 px-4 z-10 absolute top-0 left-0 m-2 rounded-xl">
+            {(markers.length > 0) &&
+                < div className="bg-rose-500 text-white py-2 px-4 z-10 absolute top-0 left-0 m-2 rounded-xl drop-shadow-md ring-1 ring-rose-700">
                     Results: {markers.length}
                 </div>
-            } */}
-        </>
+            }
+        </div>
     )
 }
 

@@ -2,15 +2,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Listbox, Transition } from "@headlessui/react";
-import { CaretSortIcon, CheckIcon, Crosshair2Icon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import { CaretSortIcon, CheckIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import type { Plan } from "~/types/plan";
-import GoogleMapComponent from '../lib/components/googleMap';
-import MapboxComponent from "../lib/components/mapbox";
 import { LoadingSpinner } from "../lib/components/loading";
-import { plansColumns } from "../lib/components/table/plansColumns";
-import { DataTable } from "../lib/components/table/plansTable";
+import MapboxComponent from "../lib/components/mapbox";
 
 const types = [
     { id: 1, name: 'Conditional Use Permits', value: 'cup' },
@@ -352,7 +349,7 @@ export default function Home() {
                     <div className="w-full mx-auto py-2 text-white relative">
                         {home &&
                             <div className="absolute top-0 right-0 z-[12] h-[400px] md:h-[800px] w-full py-2 text-center">
-                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-gray-900/95 p-4 flex items-center justify-center">
+                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-neutral-900/90 p-4 flex items-center justify-center backdrop-blur-[2px]">
                                     <div className="w-full md:w-1/2 flex flex-col gap-4 text-md">
                                         <h2 className="text-2xl font-medium">To begin exploring short-term rental licenses and conditional use permits, click Go.</h2>
                                         <div className="hidden md:visible bg-rose-500 rounded-xl w-full md:w-[10rem] items-center my-4">
@@ -371,26 +368,19 @@ export default function Home() {
                             </div>}
                         {!home && !isLoading && plans.length === 0 &&
                             <div className="absolute top-0 right-0 z-[12] h-[400px] md:h-[800px] w-full py-2 text-center">
-                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-gray-900/90 flex items-center justify-center ring-black/80">
+                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-neutral-900/90 flex items-center justify-center ring-black/80 backdrop-blur-[2px]">
                                     No results found. <br /> Consider expanding your search options.
                                 </div>
                             </div>
                         }
                         {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ?
                             <div className="absolute top-0 right-0 z-[12] h-[400px] md:h-[800px] w-full py-2">
-                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-gray-900/90 flex items-center justify-center ring-black/80">
+                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-neutral-900/90 flex items-center justify-center ring-black/80 backdrop-blur-[2px]">
                                     <LoadingSpinner size={48} />
                                 </div>
                             </div>
                             : ""}
-
-                        <div className="rounded-xl overflow-hidden relative h-[400px] md:h-[800px] w-full">
-                            <MapboxComponent markers={plans} center={center} />
-                        </div>
-                        {/* {plans && plans.length > 0 ? <GoogleMapComponent markers={plans} center={center} /> : ""} */}
-                    </div>
-                    <div className="hidden md:visible w-full mx-auto py-2 text-white rounded-xl text-black">
-                        {plansColumns && plans && plans.length > 0 ? <DataTable columns={plansColumns} data={plans} setCenter={setCenter} /> : ""}
+                        <MapboxComponent markers={plans} center={center} />
                     </div>
                 </div>
             </main >
