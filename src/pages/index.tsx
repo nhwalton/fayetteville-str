@@ -2,14 +2,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Listbox, Transition } from "@headlessui/react";
-import { CaretSortIcon, CheckIcon, Crosshair2Icon, PaperPlaneIcon } from "@radix-ui/react-icons";
+import { CaretSortIcon, CheckIcon, PaperPlaneIcon } from "@radix-ui/react-icons";
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import type { Plan } from "~/types/plan";
-import GoogleMapComponent from '../lib/components/googleMap';
 import { LoadingSpinner } from "../lib/components/loading";
-import { plansColumns } from "../lib/components/table/plansColumns";
-import { DataTable } from "../lib/components/table/plansTable";
+import MapboxComponent from "../lib/components/mapbox";
 
 const types = [
     { id: 1, name: 'Conditional Use Permits', value: 'cup' },
@@ -125,26 +123,6 @@ export default function Home() {
         setPlans(allPlans)
     }
 
-    const findUser = () => {
-        if (() => navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position: GeolocationPosition) => {
-                    const pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude,
-                    };
-                    setCenter(pos)
-                },
-                () => {
-                    setLocationAccess(false)
-                }
-                , { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 }
-            );
-        } else {
-            alert("Geolocation is not supported by this browser.")
-        }
-    }
-
     useEffect(() => {
         setIsLoading(false)
     }, [plans])
@@ -163,12 +141,6 @@ export default function Home() {
             }
         })()
     })
-
-    console.log("location access", locationAccess)
-
-    function classNames(...classes: unknown[]) {
-        return classes.filter(Boolean).join(' ')
-    }
 
     return (
         <>
@@ -370,39 +342,45 @@ export default function Home() {
                                         Go <PaperPlaneIcon />
                                     </button>
                                 </div>
-                                {(!isLoading && plans.length > 0) &&
-                                    <div className="w-full md:w-[10rem] bg-blue-500 rounded-xl">
-                                        <button
-                                            className="flex flex-row w-full gap-2 items-center hover:bg-black/10 disabled:bg-slate-500 disabled:text-slate-400 text-white rounded-xl px-4 py-2 justify-center"
-                                            disabled={!locationAccess}
-                                            onClick={() => void findUser()}
-                                        >
-                                            Find Me <Crosshair2Icon />
-                                        </button>
-                                    </div>
-                                }
                             </div>
                         </div>
                     </div>
                     {isLoading && home && plans.length < 1 ? <div className="w-full h-12 flex items-center justify-center"><LoadingSpinner size={48} /></div> : ""}
                     <div className="w-full mx-auto py-2 text-white relative">
                         {home &&
-                            <div className="flex flex-col gap-4 w-full md:w-1/2 mx-auto rounded-xl text-white">
-                                <span>To begin exploring short-term rental licenses and conditional use permits, click Go.</span>
-                                <span>By default, the search parameters are set to show all active short-term rental licenses.</span>
-                                <span>You may change this by toggling Conditional Use Permits under Permit Types to view pending CUPs.</span>
-                                <span>For a deeper dive, you may use the Statuses dropdown to view all possible permit/license statuses.</span>
+                            <div className="absolute top-0 right-0 z-[12] h-[400px] md:h-[800px] w-full py-2 text-center">
+                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-neutral-900/90 p-4 flex items-center justify-center backdrop-blur-[2px]">
+                                    <div className="w-full md:w-1/2 flex flex-col gap-4 text-md">
+                                        <h2 className="text-2xl font-medium">To begin exploring short-term rental licenses and conditional use permits, click Go.</h2>
+                                        <div className="hidden md:visible bg-rose-500 rounded-xl w-full md:w-[10rem] items-center my-4">
+                                            <button
+                                                className="flex flex-row w-full gap-2 items-center hover:bg-black/10 text-white rounded-xl px-4 py-2 justify-center"
+                                                onClick={() => void getPlans()}
+                                            >
+                                                Go <PaperPlaneIcon />
+                                            </button>
+                                        </div>
+                                        <span>
+                                            By default, the search parameters are set to show all active short-term rental licenses. You may add Conditional Use Permits under Permit Types to view pending CUPs or, for a deeper dive, update the Statuses dropdown to view all possible permit/license statuses.
+                                        </span>
+                                    </div>
+                                </div>
                             </div>}
                         {!home && !isLoading && plans.length === 0 &&
-                            <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-black/50 flex items-center justify-center ring-black/80 text-center">
-                                No results found. <br /> Consider expanding your search options.
+                            <div className="absolute top-0 right-0 z-[12] h-[400px] md:h-[800px] w-full py-2 text-center">
+                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-neutral-900/90 flex items-center justify-center ring-black/80 backdrop-blur-[2px]">
+                                    No results found. <br /> Consider expanding your search options.
+                                </div>
                             </div>
                         }
-                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ? <div className="absolute top-0 right-0 z-[999999] h-[400px] md:h-[800px] w-full py-2"><div className="rounded-xl h-[400px] md:h-[800px] w-full bg-black/40 flex items-center justify-center ring-black/80"><LoadingSpinner size={48} /></div></div> : ""}
-                        {plans && plans.length > 0 ? <GoogleMapComponent markers={plans} center={center} /> : ""}
-                    </div>
-                    <div className="hidden md:visible w-full mx-auto py-2 text-white rounded-xl">
-                        {plansColumns && plans && plans.length > 0 ? <DataTable columns={plansColumns} data={plans} setCenter={setCenter} /> : ""}
+                        {isLoading && ((plans.length > 0) || (!home && plans.length === 0)) ?
+                            <div className="absolute top-0 right-0 z-[12] h-[400px] md:h-[800px] w-full py-2">
+                                <div className="rounded-xl h-[400px] md:h-[800px] w-full bg-neutral-900/90 flex items-center justify-center ring-black/80 backdrop-blur-[2px]">
+                                    <LoadingSpinner size={48} />
+                                </div>
+                            </div>
+                            : ""}
+                        <MapboxComponent markers={plans} center={center} />
                     </div>
                 </div>
             </main >
