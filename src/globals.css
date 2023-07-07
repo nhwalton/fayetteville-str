@@ -104,3 +104,6 @@
     height: 0;
   }
 }
+
+.fa-calendar::before {
+  content: "\f133"; }
