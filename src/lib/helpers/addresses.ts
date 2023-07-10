@@ -2,8 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-import fs from 'fs';
-import addressData from '../data/addresses.json';
+import { Storage } from '@google-cloud/storage'
 
 import type { GeoRoot } from "../../types/geocodeResults";
 
@@ -14,7 +13,22 @@ export interface Address {
     lng: number
 }
 
-const addresses = addressData as Address[];
+const storageClient = new Storage(
+    {
+        projectId: "dulcet-abacus-245416",
+        credentials: JSON.parse(process.env.GOOGLE_CREDENTIALS as string),
+    }
+);
+
+async function getAddressesFromGCP(): Promise<Address[]> {
+    const bucket = storageClient.bucket(process.env.GOOGLE_STORAGE_BUCKET as string);
+    const file = bucket.file('addresses.json');
+    const fileContents = await file.download();
+    const addresses = JSON.parse(fileContents.toString()) as Address[];
+    return addresses;
+}
+
+const addresses = await getAddressesFromGCP();
 
 export const addressesRepo = {
     getAddresses: () => addresses,
@@ -22,7 +36,6 @@ export const addressesRepo = {
 }
 
 async function create(address: string) {
-
     const newAddress = {} as Address;
 
     newAddress.id = addresses.length ? Math.max(...addresses.map((x: Address) => x.id)) + 1 : 1;
@@ -45,14 +58,20 @@ async function create(address: string) {
         newAddress.lng = geocode.results[0].geometry.location.lng;
 
         addresses.push(newAddress);
-        saveData();
+        await saveData(addresses);
         return newAddress;
     } else {
+        console.log(geocode)
         throw new Error("Address could not be geocoded.");
     }
 
 }
 
-function saveData() {
-    fs.writeFileSync('src/lib/data/addresses.json', JSON.stringify(addresses, null, 4));
+async function saveData(addresses: Address[]) {
+    // fs.writeFileSync('src/lib/data/addresses.json', JSON.stringify(addresses, null, 4));
+    // write addresses to g oogle storage
+    // const storageClient = new Storage();
+    const bucket = storageClient.bucket(process.env.GOOGLE_STORAGE_BUCKET as string);
+    const file = bucket.file('addresses.json');
+    await file.save(JSON.stringify(addresses, null, 4));
 }

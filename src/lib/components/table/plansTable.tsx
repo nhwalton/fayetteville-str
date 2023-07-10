@@ -22,11 +22,12 @@ import {
 } from "../ui/table"
 import React, { Dispatch, SetStateAction } from "react";
 import { Plan } from "~/types/plan";
+import { LngLat } from "mapbox-gl";
 
 interface DataTableProps {
     columns: ColumnDef<Plan>[]
     data: Plan[]
-    setCenter: Dispatch<SetStateAction<google.maps.LatLngLiteral>>
+    setCenter: Dispatch<SetStateAction<LngLat>>
 }
 
 export function DataTable({
@@ -73,7 +74,7 @@ export function DataTable({
                                     if (cell.column.id == "address") {
                                         return (
                                             <TableCell className="text-md" key={cell.id}>
-                                                <button className="flex flex-row gap-2 items-center underline break-words overflow-hidden" onClick={() => setCenter({ lat: Number(row.original.lat), lng: Number(row.original.lng) })}>
+                                                <button className="flex flex-row gap-2 items-center underline break-words overflow-hidden" onClick={() => setCenter(new LngLat(Number(row.original.lng), Number(row.original.lat)))}>
                                                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                                                 </button>
                                             </TableCell>

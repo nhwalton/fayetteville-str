@@ -8,6 +8,9 @@ import { Fragment, useEffect, useState } from "react";
 import type { Plan } from "~/types/plan";
 import { LoadingSpinner } from "../lib/components/loading";
 import MapboxComponent from "../lib/components/mapbox";
+import { plansColumns } from "../lib/components/table/plansColumns";
+import { DataTable } from "../lib/components/table/plansTable";
+import { LngLat } from "mapbox-gl";
 
 const types = [
     { id: 1, name: 'Conditional Use Permits', value: 'cup' },
@@ -65,13 +68,11 @@ export default function Home() {
     const [plans, setPlans] = useState<Plan[]>([])
     const [timeframe, setTimeframe] = useState<Timeframe>(timeframes[3] as Timeframe)
     const [isLoading, setIsLoading] = useState<boolean>(false)
-    const [center, setCenter] = useState<google.maps.LatLngLiteral>({ lat: 36.062579, lng: -94.157426 })
     const [home, setHome] = useState<boolean>(true)
+    const [center, setCenter] = useState<LngLat>(new LngLat(-94.157426, 36.062579))
 
     const [selectedTypes, setSelectedTypes] = useState([types[1], types[2]])
     const [validStatuses, setValidStatuses] = useState([statuses[4], statuses[5], statuses[6], statuses[7], statuses[8], statuses[10], statuses[11], statuses[20], statuses[24]])
-
-    const [locationAccess, setLocationAccess] = useState<boolean>(true)
 
     const getPlans = async () => {
         setHome(false)
@@ -126,21 +127,6 @@ export default function Home() {
     useEffect(() => {
         setIsLoading(false)
     }, [plans])
-
-    useEffect(() => {
-        console.log("checking location access")
-        let access = null;
-        void (async () => {
-            await navigator.permissions.query({ name: 'geolocation' }).then((result) => result.state).then((state) => access = state).catch((error) => console.log(error));
-            if (access === 'granted' || access === 'prompt') {
-                console.log("access", access)
-                setLocationAccess(true)
-            } else {
-                console.log("access", access)
-                setLocationAccess(false)
-            }
-        })()
-    })
 
     return (
         <>
@@ -381,6 +367,9 @@ export default function Home() {
                             </div>
                             : ""}
                         <MapboxComponent markers={plans} center={center} />
+                    </div>
+                    <div className="invisible md:visible w-full mx-auto py-2 text-white rounded-xl">
+                        {plansColumns && plans && plans.length > 0 ? <DataTable columns={plansColumns} data={plans} setCenter={setCenter} /> : ""}
                     </div>
                 </div>
             </main >
