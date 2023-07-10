@@ -82,7 +82,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             }
         } catch (error) {
             console.log(error)
-            res.status(500).json({ error: 'Internal server error' });
+            res.status(500).json({ error: 'Error fetching from self service API.' });
             return;
         }
 
@@ -92,7 +92,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             if (plan && plan.AddressDisplay) {
                 let address = addresses.find(a => a.address === plan.AddressDisplay)
                 if (!address) {
-                    address = await addressesRepo.create(plan.AddressDisplay)
+                    try {
+                        address = await addressesRepo.create(plan.AddressDisplay)
+                    } catch (error) {
+                        console.log(error)
+                        continue;
+                    }
                 }
                 const date = plan.ApplyDate
                 const shortDate = date.split('T')[0] as string

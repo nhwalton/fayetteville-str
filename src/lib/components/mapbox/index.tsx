@@ -1,33 +1,37 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import mapboxgl, { type GeoJSONSource, type GeoJSONSourceRaw } from "mapbox-gl";
+import mapboxgl, { type GeoJSONSource, type GeoJSONSourceRaw, type LngLat } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React, { useEffect, useRef, useState } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { type Plan } from "~/types/plan";
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoibmh3YWx0b24iLCJhIjoiY2xqcmFydmVnMGRjZjNzbzY4MzN1MjdhYyJ9.IbxdyFKrDAxWo0cbBu_N_A';
+mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_MAPS_API_KEY as string;
 
-const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLiteral }> = ({ markers }) => {
+const MapboxComponent: React.FC<{ markers: Plan[], center: LngLat }> = ({ markers, center }) => {
+    // const center = { lat: 36.062579, lng: -94.157426 }
+
     const mapContainer = useRef(null);
     const map = useRef<mapboxgl.Map | null>(null);
-    const [lng, setLng] = useState(-94.157426);
-    const [lat, setLat] = useState(36.062579);
+    const [lng, setLng] = useState(center.lng);
+    const [lat, setLat] = useState(center.lat);
     const [zoom, setZoom] = useState(13);
     const [mapLoad, setMapLoad] = useState(false);
 
     const Popup = (props: { date: string, address: string, status: string, type: string, url: string }) => {
         const { date, address, status, type, url } = props
         return (
-            <div className="flex flex-col gap-2 text-slate-800 w-[300px]">
-                <div className="grid grid-cols-[auto_1fr]">
-                    <p className="col-span-2 font-semibold mb-2 max-w-[200px]">{address.substring(0, address.toLocaleLowerCase().indexOf(' fayetteville'))}<br />{address.substring(address.toLocaleLowerCase().indexOf('fayetteville'), address.length)}</p>
-                    <p className="font-semibold me-2">Permit Type:</p><p>{type}</p>
-                    <p className="font-semibold me-2">Applied:</p><p>{date}</p>
-                    <p className="font-semibold me-2">Status:</p><p>{status}</p>
-                    <p className="font-semibold me-2">Permit Details:</p><a className="underline" href={url} target="_blank" rel="noreferrer">Link</a>
-                    <a className="me-2 font-normal text-[#1a73e8] hover:underline mt-1" href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(address)}`} target="_blank" rel="noreferrer">View on Google Maps</a>
+            <>
+                <div className="flex flex-col gap-2 text-slate-800 w-[300px]">
+                    <div className="grid grid-cols-[auto_1fr]">
+                        <p className="col-span-2 font-semibold mb-2 max-w-[200px]">{address.substring(0, address.toLocaleLowerCase().indexOf(' fayetteville'))}<br />{address.substring(address.toLocaleLowerCase().indexOf('fayetteville'), address.length)}</p>
+                        <p className="font-semibold me-2">Permit Type:</p><p>{type}</p>
+                        <p className="font-semibold me-2">Applied:</p><p>{date}</p>
+                        <p className="font-semibold me-2">Status:</p><p>{status}</p>
+                        <p className="font-semibold me-2">Permit Details:</p><a className="underline" href={url} target="_blank" rel="noreferrer">Link</a>
+                        <a className="me-2 font-normal text-[#1a73e8] hover:underline mt-1" href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(address)}`} target="_blank" rel="noreferrer">View on Google Maps</a>
+                    </div >
                 </div >
-            </div >
+            </>
         )
     }
 
@@ -70,39 +74,55 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
         if (!mapLoad) return;
         const markersGeoJSON: GeoJSON.FeatureCollection = ({
             type: "FeatureCollection",
-            features: markers.map(marker => ({
-                type: "Feature",
-                properties: {
-                    date: marker.date,
-                    address: marker.address,
-                    status: marker.status,
-                    id: marker.id,
-                    type: marker.type,
-                    link: marker.link,
-                    color: marker.type ===
-                        'Conditional Use Permit - General' ? '#2563eb'
-                        : (marker.type === 'Short-Term Rental Type 1' ? "#fbbf24"
-                            :
-                            "#fb7185"),
-                    stroke: marker.type ===
-                        'Conditional Use Permit - General' ? "#2563eb"
-                        : (marker.type === 'Short-Term Rental Type 1' ? "#d97706"
-                            :
-                            "#e11d48")
-                },
-                geometry: {
-                    type: "Point",
-                    coordinates: [marker.lng, marker.lat]
+            features: markers.map(marker => {
+                let markerLng = marker.lng
+                let markerLat = marker.lat
+                if (marker.type === 'Short-Term Rental Type 1') {
+                    markerLng = marker.lng + 0.00002
+                    markerLat = marker.lat + 0.00002
+                } else if (marker.type === 'Conditional Use Permit - General') {
+                    markerLng = marker.lng - 0.00002
+                    markerLat = marker.lat - 0.00002
+                } else {
+                    markerLng = marker.lng
+                    markerLat = marker.lat
                 }
-            }))
+
+                return ({
+                    type: "Feature",
+                    properties: {
+                        date: marker.date,
+                        address: marker.address,
+                        status: marker.status,
+                        id: marker.id,
+                        type: marker.type,
+                        link: marker.link,
+                        color: marker.type ===
+                            'Conditional Use Permit - General' ? '#2563eb'
+                            : (marker.type === 'Short-Term Rental Type 1' ? "#fbbf24"
+                                :
+                                "#fb7185"),
+                        stroke: marker.type ===
+                            'Conditional Use Permit - General' ? "#2563eb"
+                            : (marker.type === 'Short-Term Rental Type 1' ? "#d97706"
+                                :
+                                "#e11d48")
+                    },
+                    geometry: {
+                        type: "Point",
+                        coordinates: [markerLng, markerLat]
+                    }
+                })
+            })
         })
-        console.log('load')
-        if (map.current?.isSourceLoaded('plans')) {
+        if (map.current?.getSource('plans')) {
+            console.log('plans loaded')
             map.current.removeLayer('unclustered-point')
             map.current.removeLayer('cluster-count')
             map.current.removeLayer('clusters')
             map.current.removeSource('plans');
         }
+
         map.current?.addSource('plans', {
             type: 'geojson',
             data: markersGeoJSON,
@@ -110,6 +130,7 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
             clusterMaxZoom: 14,
             clusterRadius: 50
         } as GeoJSONSourceRaw)
+
         map.current.addLayer({
             id: 'clusters',
             type: 'circle',
@@ -186,42 +207,77 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
                 ],
                 'icon-optional': true,
                 'text-font': ['Font Awesome 6 Free Solid', 'Arial Unicode MS Bold'],
-                'text-size': 16
+                'text-size': 16,
             },
             paint: {
                 'text-color': [
                     'match',
                     ['get', 'type'],
                     'Conditional Use Permit - General',
-                    '#38bdf8',
+                    ['match',
+                        ['get', 'status'],
+                        'Approved',
+                        '#38bdf8',
+                        'Denied',
+                        '#dc2626',
+                        '#c084fc'],
                     'Short-Term Rental Type 1',
-                    '#fbbf24',
+                    ['match',
+                        ['get', 'status'],
+                        ['Issued', 'Renewed'],
+                        '#fbbf24',
+                        'Denied',
+                        '#dc2626',
+                        '#c084fc'],
                     'Short-Term Rental Type 2',
-                    '#fb7185',
+                    ['match',
+                        ['get', 'status'],
+                        ['Issued', 'Renewed'],
+                        '#fb7185',
+                        'Denied',
+                        '#dc2626',
+                        '#c084fc'],
                     '#ffffff'
                 ],
                 'text-halo-color': [
                     'match',
                     ['get', 'type'],
                     'Conditional Use Permit - General',
-                    '#0369a1',
+                    ['match',
+                        ['get', 'status'],
+                        'Approved',
+                        '#0369a1',
+                        'Denied',
+                        '#7f1d1d',
+                        '#7e22ce'],
                     'Short-Term Rental Type 1',
-                    '#a16207',
+                    ['match',
+                        ['get', 'status'],
+                        ['Issued', 'Renewed'],
+                        '#a16207',
+                        'Denied',
+                        '#7f1d1d',
+                        '#7e22ce'],
                     'Short-Term Rental Type 2',
-                    '#be185d',
+                    ['match',
+                        ['get', 'status'],
+                        ['Issued', 'Renewed'],
+                        '#be185d',
+                        'Denied',
+                        '#7f1d1d',
+                        '#7e22ce'],
                     '#ffffff'
                 ],
                 'icon-opacity': 1,
                 'text-halo-width': 1,
                 'text-opacity': 1,
-                'text-translate': [0, 10],
+                'text-translate': [0, 0],
             }
         });
         map.current.on('click', 'clusters', function (e) {
             const features = map.current?.queryRenderedFeatures(e.point, {
                 layers: ['clusters']
             }) as GeoJSON.Feature<GeoJSON.Point>[];
-            console.log(features[0])
             const clusterId = features[0]?.properties?.cluster_id as number;
             const plansSource = map.current?.getSource('plans') as GeoJSONSource;
             plansSource.getClusterExpansionZoom(
@@ -243,16 +299,16 @@ const MapboxComponent: React.FC<{ markers: Plan[], center: google.maps.LatLngLit
                 const { date, address, status, type, link } = e.features[0]?.properties as Plan;
                 const popupNode = document.createElement('div');
                 popupNode.style.cssText = 'padding-left:0.5rem;'
-                ReactDOM.render(
-                    <Popup date={date} address={address} status={status} type={type} url={link} />,
-                    popupNode
+                ReactDOM.createRoot(popupNode).render(
+                    <Popup date={date} address={address} status={status} type={type} url={link} />
                 )
                 new mapboxgl.Popup({ maxWidth: "300px" })
                     .setLngLat(coordinates)
                     .setDOMContent(
                         popupNode
                     )
-                    .addTo(map.current as mapboxgl.Map);
+                    .addTo(map.current as mapboxgl.Map)
+                    .setOffset([0, -15]);
             }
         });
         map.current.on('mouseenter', 'clusters', function () {
